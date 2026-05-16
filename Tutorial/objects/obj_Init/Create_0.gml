@@ -5,6 +5,7 @@ global.cash_amount = 100;
 global.wave = 0;
 global.instance_tower_to_build = noone;
 global.hitpoints = 10;
+global.selected_tower = noone;
 
 room_goto(rm_Menu);
 
