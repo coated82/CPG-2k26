@@ -1,8 +1,26 @@
 randomize();
 
+// Muda o taanho da imagem e da mascara de colisao
+image_xscale = 0.35;
+image_yscale = 0.35;
+
+// atualiza bbox automaticamente
+sprite_collision_mask(
+    sprite_index,
+    true,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+);
+
 // Vida cresce com a wave
-hit_points = clamp(irandom_range(1, global.wave), 1, global.wave + 1);
+hit_points = 67;
 hit_points_max = hit_points;
+image_index = hit_points;
 
 current_path = choose(pth_Top, pth_Bottom);
 
@@ -11,9 +29,6 @@ current_path = choose(pth_Top, pth_Bottom);
 speed_current = random_range(0.8, 1.5) + (global.wave * 0.05);
 speed_original = speed_current;
 speed_timer = 1 * room_speed;
-
-image_speed = 0;
-image_index = irandom_range(0, 3);
 
 // Inicia o movimento
 path_start(
@@ -28,7 +43,8 @@ path_start(
 // Função de dano
 hurt = function(_amount = 1) {
     hit_points -= _amount;
-    
+    image_index = hit_points;
+	
     if(hit_points <= 0){
 		global.cash_amount += 10;
 		

@@ -1,0 +1,1 @@
+image_angle = sin(current_time / 200) * 10;
