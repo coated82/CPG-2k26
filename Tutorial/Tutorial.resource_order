@@ -8,6 +8,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_Init","order":8,"path":"objects/obj_Init/obj_Init.yy",},
+    {"name":"obj_Menu","order":14,"path":"objects/obj_Menu/obj_Menu.yy",},
     {"name":"obj_Mouse","order":12,"path":"objects/obj_Mouse/obj_Mouse.yy",},
     {"name":"obj_Placeable","order":13,"path":"objects/obj_Placeable/obj_Placeable.yy",},
     {"name":"obj_Room_Init","order":7,"path":"objects/obj_Room_Init/obj_Room_Init.yy",},
@@ -22,6 +23,7 @@
     {"name":"obj_UI_Tower_Parent","order":3,"path":"objects/obj_UI_Tower_Parent/obj_UI_Tower_Parent.yy",},
     {"name":"obj_UI_Tower_Slow","order":1,"path":"objects/obj_UI_Tower_Slow/obj_UI_Tower_Slow.yy",},
     {"name":"rm_Init","order":1,"path":"rooms/rm_Init/rm_Init.yy",},
+    {"name":"rm_Menu","order":2,"path":"rooms/rm_Menu/rm_Menu.yy",},
     {"name":"draw_set","order":2,"path":"scripts/draw_set/draw_set.yy",},
     {"name":"layers","order":4,"path":"scripts/layers/layers.yy",},
     {"name":"set_align","order":3,"path":"scripts/set_align/set_align.yy",},
