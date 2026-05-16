@@ -28,6 +28,7 @@ hurt = function(_amount = 1) {
     hit_points -= _amount;
     
     if(hit_points <= 0){
+		global.cash_amount += 10;
         instance_destroy();
     }
 }
