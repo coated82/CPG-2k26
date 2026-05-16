@@ -12,7 +12,9 @@ move_layer("Background", LAYER.background);
 
 // add ui
 instance_create_depth(0, 0, get_layer_depth(LAYER.ui), obj_UI_Master);
+
 // add mouse
+instance_create_depth(0, 0, get_layer_depth(LAYER.ui), obj_Mouse);
 
 // add lighting
 
