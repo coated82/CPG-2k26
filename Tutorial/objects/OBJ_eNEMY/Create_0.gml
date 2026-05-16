@@ -17,10 +17,21 @@ sprite_collision_mask(
     0
 );
 
+// Função de vincular vida com sprite
+// Função para trocar o sprite com base na vida
+change_num = function() {
+	image_index = abs(hit_points);
+	if (hit_points < 0) {
+		// Sumonar sinal de menos
+		minus = instance_create_layer(x, y, "Placeables", obj_Minus_Signal);
+		minus.parent_obj = id;
+	}
+}
+
 // Vida cresce com a wave
-hit_points = 67;
+hit_points = -3;
 hit_points_max = hit_points;
-image_index = hit_points;
+change_num()
 
 current_path = choose(pth_Top, pth_Bottom);
 
@@ -43,9 +54,9 @@ path_start(
 // Função de dano
 hurt = function(_amount = 1) {
     hit_points -= _amount;
-    image_index = hit_points;
+    change_num()
 	
-    if(hit_points <= 0){
+    if(hit_points == 0){
 		global.cash_amount += 10;
 		
         instance_destroy();
