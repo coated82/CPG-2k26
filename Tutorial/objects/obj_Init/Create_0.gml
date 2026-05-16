@@ -18,6 +18,8 @@ var ordem_dos_caracteres = "0123456789";
 // O quarto argumento é o espaçamento em pixels entre cada número.
 global.fonte_handdrawn = font_add_sprite_ext(spr_fonte_numeros, ordem_dos_caracteres, true, 2);
 
+
+
 /* --- Pra colocar no objeto ná hora de fazer funcionar ---
 
 // 1. Dizemos ao GameMaker para usar a nossa fonte customizada

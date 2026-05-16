@@ -45,16 +45,23 @@ speed_timer = 1 * room_speed;
 
 path_start(current_path, speed_current, path_action_stop, true);
 
-// 6. Função de Dano (Hurt)
+// 6. Função de Dano (Hurt)// No Create do obj_Enemy
 hurt = function(_amount = 1) {
-    hit_points -= _amount; // Lógica: Valor - (-2) = Soma
+    // 1. Subtrai o dano (ex: 3 - 1 = 2)
+    hit_points -= _amount; 
+    
+    // 2. Atualiza o sprite para o número correto
     change_num();
     
-    // Condição de destruição (Matematicamente resolvido)
-    if (hit_points >= 0) {
+    // 3. DEBUG (Para você ver a mágica no console)
+    show_debug_message("HP Atual: " + string(hit_points));
+    
+    // 4. A CORREÇÃO: Só morre se for zero ou menos
+    // Usamos <= 0 porque se o dano for maior que a vida, ele também morre
+    if (hit_points <= 0) {
         global.cash_amount += 10;
         
-        // Garante que o sinal suma ao morrer
+        // Limpa o sinal de menos se ele existir
         if (instance_exists(minus)) instance_destroy(minus);
         
         instance_destroy();

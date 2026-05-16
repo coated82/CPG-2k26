@@ -1,1 +1,1 @@
-tower_select(id);
+//tower_select(id);

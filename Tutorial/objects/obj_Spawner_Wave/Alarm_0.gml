@@ -1,24 +1,18 @@
-if (global.pausado) exit;
-
-// 1. Avança para a próxima wave
-global.wave += 1;
-
-// 2. Calcula e cria os inimigos
-// O repeat garante que nasçam vários, não apenas um
-var _quantidade = floor(global.wave * 1.5);
-
-repeat(_quantidade) {
-    instance_create_depth(
-        -100, 
-        -100, 
-        get_layer_depth(LAYER.enemy), 
-        obj_Enemy
-    );
+if (global.pausado) {
+    alarm[0] = 1; // Espera o pause acabar
+    exit;
 }
 
-// 3. Define o tempo de espera para a PRÓXIMA wave (ex: 5 segundos)
-// Usamos game_get_speed para garantir que o tempo seja real independente do FPS
-var _tempo_espera = game_get_speed(gamespeed_fps) * 5;
-alarm_set(0, _tempo_espera);
+global.wave += 1;
 
-show_debug_message("Wave " + string(global.wave) + " iniciada com " + string(_quantidade) + " inimigos!");
+// BALANCEAMENTO ESTILO BLOONS:
+// 1. Quantidade cresce linearmente
+enemies_to_spawn = 5 + floor(global.wave * 1.5);
+
+// 2. O intervalo entre inimigos diminui (fica mais frenético)
+spawn_delay = max(10, 40 - (global.wave * 2)); 
+
+// 3. Dispara o Alarme 1 para começar a soltar os inimigos um por um
+alarm[1] = 1; 
+
+show_debug_message("Preparando Wave " + string(global.wave));

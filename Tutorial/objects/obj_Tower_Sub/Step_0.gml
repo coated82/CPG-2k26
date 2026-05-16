@@ -1,28 +1,44 @@
+// 1. WATCHDOG: Limpa o alvo se ele deixou de existir
+if (!instance_exists(target)) target = noone;
+
+// 2. PAUSE: Se o jogo estiver pausado, interrompe o processamento aqui
 if (global.pausado) exit;
-// 1. Procura alvo se estiver vazio
+
+// 3. BUSCA DE SINAL: Procura o inimigo apenas se estiver sem alvo
 if (target == noone) {
-    target = collision_circle(x, y, radius, obj_Enemy, false, true);
+    var _inst = collision_circle(x, y, radius, obj_Enemy, false, true);
+    
+    // Filtro para Subtratora: Mira apenas em sinais POSITIVOS (> 0)
+    if (_inst != noone && _inst.hit_points > 0) {
+        target = _inst;
+    }
 }
 
-// 2. Se o alvo existe, atira
+// 4. CICLO DE EXECUÇÃO: Atira se o alvo for válido
 if (instance_exists(target)) {
-    // Se o alvo fugir, perde o foco
-    if (point_distance(x, y, target.x, target.y) > radius) {
+    
+    // CONDIÇÕES DE RESET: Perde o foco se o inimigo fugir ou se o sinal chegar a zero
+    if (point_distance(x, y, target.x, target.y) > radius || target.hit_points <= 0) {
         target = noone;
-    } else if (can_shoot) {
-        can_shoot = false;
+    } 
+    // GATILHO: Só dispara se a trava 'can_shoot' estiver liberada
+    else if (can_shoot) {
+        can_shoot = false; // Trava o gatilho imediatamente
         
-        // Ativa o alarme de recarga (Certifique-se que o Alarm 2 tem can_shoot = true)
-        alarm[2] = game_get_speed(gamespeed_fps) * rate_of_fire;
+        // RECARGA: Converte o valor de rate_of_fire em frames reais (FPS)
+        alarm[0] = game_get_speed(gamespeed_fps) * rate_of_fire; 
         
-        // Criar a bala
+        // SAÍDA: Cria o projétil apontando para o alvo
         var _bullet = instance_create_depth(x, y, depth - 1, obj_Bullet_Player);
-        _bullet.direction = point_direction(x, y, target.x, target.y);
-        _bullet.speed = 10;
-        _bullet.image_angle = _bullet.direction;
-        _bullet._damage = bullet_damage;
-		
+        if (instance_exists(_bullet)) {
+            _bullet.direction = point_direction(x, y, target.x, target.y);
+            _bullet.speed = 10;
+            _bullet.image_angle = _bullet.direction;
+            
+            // CORREÇÃO AQUI:
+            // Em vez de "= 1", use a variável da torre. 
+            // Assim, se o upgrade mudar bullet_damage para 2, a bala assume esse valor.
+            _bullet._damage = bullet_damage; 
+        }
     }
-} else {
-    target = noone;
 }
