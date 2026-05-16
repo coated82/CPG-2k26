@@ -7,6 +7,7 @@
     {"name":"Towers","order":4,"path":"folders/Objects/UI/Towers.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_audio_controler","order":11,"path":"objects/obj_audio_controler/obj_audio_controler.yy",},
     {"name":"obj_Bullet_Player","order":8,"path":"objects/obj_Bullet_Player/obj_Bullet_Player.yy",},
     {"name":"obj_Bullet_Slow","order":10,"path":"objects/obj_Bullet_Slow/obj_Bullet_Slow.yy",},
     {"name":"obj_Enemy","order":9,"path":"objects/obj_Enemy/obj_Enemy.yy",},
