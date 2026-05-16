@@ -3,8 +3,8 @@
     {"name":"Towers","order":11,"path":"folders/Objects/Towers.yy",},
     {"name":"UI","order":10,"path":"folders/Objects/UI.yy",},
     {"name":"Shop","order":1,"path":"folders/Objects/UI/Buttons/Shop.yy",},
-    {"name":"Towers","order":4,"path":"folders/Objects/UI/Towers.yy",},
     {"name":"Panels","order":1,"path":"folders/Objects/UI/Panels.yy",},
+    {"name":"Towers","order":4,"path":"folders/Objects/UI/Towers.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_Init","order":8,"path":"objects/obj_Init/obj_Init.yy",},

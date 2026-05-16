@@ -6,7 +6,7 @@ global.wave = 0;
 global.instance_tower_to_build = noone;
 global.hitpoints = 10;
 
-room_goto(rm_Menu);
+room_goto(rm_MainGame);
 
 // Definimos a string com a ordem exata dos caracteres que estão nos frames da sprite
 var ordem_dos_caracteres = "0123456789";
