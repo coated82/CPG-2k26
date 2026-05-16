@@ -1,0 +1,23 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_Init","order":8,"path":"objects/obj_Init/obj_Init.yy",},
+    {"name":"obj_Room_Init","order":7,"path":"objects/obj_Room_Init/obj_Room_Init.yy",},
+    {"name":"rm_Init","order":1,"path":"rooms/rm_Init/rm_Init.yy",},
+    {"name":"draw_set","order":2,"path":"scripts/draw_set/draw_set.yy",},
+    {"name":"layers","order":4,"path":"scripts/layers/layers.yy",},
+    {"name":"set_align","order":3,"path":"scripts/set_align/set_align.yy",},
+    {"name":"spr_Bullet_Slow","order":9,"path":"sprites/spr_Bullet_Slow/spr_Bullet_Slow.yy",},
+    {"name":"spr_Bullet","order":2,"path":"sprites/spr_Bullet/spr_Bullet.yy",},
+    {"name":"spr_Enemy","order":1,"path":"sprites/spr_Enemy/spr_Enemy.yy",},
+    {"name":"spr_Icon_Sell","order":6,"path":"sprites/spr_Icon_Sell/spr_Icon_Sell.yy",},
+    {"name":"spr_Icon_Upgrade","order":5,"path":"sprites/spr_Icon_Upgrade/spr_Icon_Upgrade.yy",},
+    {"name":"spr_Lighting_Cutout_32","order":1,"path":"sprites/spr_Lighting_Cutout_32/spr_Lighting_Cutout_32.yy",},
+    {"name":"spr_Placeable","order":8,"path":"sprites/spr_Placeable/spr_Placeable.yy",},
+    {"name":"spr_Tower_Bomb","order":1,"path":"sprites/spr_Tower_Bomb/spr_Tower_Bomb.yy",},
+    {"name":"spr_Tower_Slow","order":2,"path":"sprites/spr_Tower_Slow/spr_Tower_Slow.yy",},
+    {"name":"spr_UI_Bar","order":4,"path":"sprites/spr_UI_Bar/spr_UI_Bar.yy",},
+    {"name":"spr_UI_Close","order":1,"path":"sprites/spr_UI_Close/spr_UI_Close.yy",},
+    {"name":"spr_UI_Panel","order":2,"path":"sprites/spr_UI_Panel/spr_UI_Panel.yy",},
+  ],
+}
