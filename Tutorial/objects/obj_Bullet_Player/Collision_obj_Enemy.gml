@@ -1,6 +1,7 @@
-// Garanta que o código seja EXATAMENTE este:
 if (instance_exists(other)) {
-    other.hurt(_damage); // O _damage deve ser 1, vindo da torre
+    // Passamos o dano E o nome da torre que disparou para o Firewall do inimigo
+    other.hurt(_damage, source_tower_name);
 }
 
-instance_destroy(); // ESSENCIAL: Destrói a bala para não dar dano no próximo frame
+// Destrói a bala após o impacto
+instance_destroy();

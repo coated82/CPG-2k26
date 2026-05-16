@@ -1,46 +1,41 @@
-if (global.pausado) exit;
-
-// 1. WATCHDOG: Limpa o alvo se ele deixou de existir
-if (!instance_exists(target)) target = noone;
-
-// 2. PAUSE: Se o jogo estiver pausado, interrompe o processamento aqui
-if (global.pausado) exit;
-
-// 3. BUSCA DE SINAL: Procura o inimigo apenas se estiver sem alvo
-if (target == noone) {
-    var _inst = collision_circle(x, y, radius, obj_Enemy, false, true);
-    
-    // Filtro para Subtratora: Mira apenas em sinais POSITIVOS (> 0)
-    if (_inst != noone && _inst.hit_points > 0) {
-        target = _inst;
+// 1. WATCHDOG: Validação do Alvo
+if (!instance_exists(target)) {
+    target = noone;
+} else {
+    var _dist = point_distance(x, y, target.x, target.y);
+    // PERDA DE ALVO: Se fugir do raio OU se morrer OU se virou negativo OU se virou imaginário
+    if (_dist > radius || target.hit_points <= 0 || target.is_negative || target.is_imaginary) {
+        target = noone;
     }
 }
 
-// 4. CICLO DE EXECUÇÃO: Atira se o alvo for válido
-if (instance_exists(target)) {
-    
-    // CONDIÇÕES DE RESET: Perde o foco se o inimigo fugir ou se o sinal chegar a zero
-    if (point_distance(x, y, target.x, target.y) > radius || target.hit_points <= 0) {
-        target = noone;
-    } 
-    // GATILHO: Só dispara se a trava 'can_shoot' estiver liberada
-    else if (can_shoot) {
-        can_shoot = false; // Trava o gatilho imediatamente
-        
-        // RECARGA: Converte o valor de rate_of_fire em frames reais (FPS)
-        alarm[0] = game_get_speed(gamespeed_fps) * rate_of_fire; 
-        
-        // SAÍDA: Cria o projétil apontando para o alvo
-        var _bullet = instance_create_depth(x, y, depth - 1, obj_Bullet_Player);
-        if (instance_exists(_bullet)) {
-            _bullet.direction = point_direction(x, y, target.x, target.y);
-            _bullet.speed = 10;
-            _bullet.image_angle = _bullet.direction;
-            
-            // CORREÇÃO AQUI:
-            // Em vez de "= 1", use a variável da torre. 
-            // Assim, se o upgrade mudar bullet_damage para 2, a bala assume esse valor.
-            _bullet._damage = bullet_damage; 
+if (global.pausado) exit;
+
+// 2. BUSCA ATIVA: Só enxerga POSITIVOS (!is_negative)
+if (target == noone) {
+    var _range = radius;
+    var _me = id;
+    var _max_progress = -1;
+    with (obj_Enemy) {
+        if (point_distance(x, y, _me.x, _me.y) <= _range && !is_negative && !is_imaginary && hit_points > 0) {
+            if (path_position > _max_progress) {
+                _max_progress = path_position;
+                _me.target = id;
+            }
         }
+    }
+}
+
+// 3. DISPARO
+if (target != noone && can_shoot) {
+    can_shoot = false;
+    alarm[0] = game_get_speed(gamespeed_fps) * rate_of_fire;
+    
+    var _bullet = instance_create_depth(x, y, depth - 1, obj_Bullet_Player);
+    if (instance_exists(_bullet)) {
+        _bullet.direction = point_direction(x, y, target.x, target.y);
+        _bullet.speed = 10;
+        _bullet._damage = bullet_damage;
+        _bullet.source_tower_name = name; // Deve ser "Subtratora"
     }
 }

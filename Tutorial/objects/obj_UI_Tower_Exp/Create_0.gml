@@ -2,7 +2,7 @@
 event_inherited();
 
 #region TOWER INFORMATION
-	name = "Expinencial";
+	name = "Exponencial";
 	cost = 50;
 	image = spr_Tower_Bomb;
 #endregion

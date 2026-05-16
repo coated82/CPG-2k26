@@ -1,19 +1,11 @@
-// ========== SISTEMA DE PAUSA ==========
 if (global.pausado) {
-    // Se estiver pausado e o path estiver rodando, para ele
-    if (path_position > 0) {
-        path_pause = true;  // Salva que estava rodando
-        path_speed = 0;      // Zera a velocidade do path
-    }
+    if (path_speed != 0) { speed_original = path_speed; path_speed = 0; }
     exit;
-} else {
-    // Se não estiver pausado e estava pausado, retoma
-    if (path_pause) {
-        path_speed = speed_current;  // Volta a velocidade original
-        path_pause = false;
-    }
+} else if (path_speed == 0) {
+    path_speed = speed_original;
 }
 
+<<<<<<< Updated upstream
 // ========== VERIFICA SE O POWER-UP S ESTÁ ATIVO ==========
 if (global.powerup_s_ativo && path_speed != speed_current * global.speed_multiplier) {
     path_speed = speed_current * global.speed_multiplier;
@@ -23,19 +15,10 @@ if (!global.powerup_s_ativo && path_speed != speed_current) {
 }
 
 // Efeito visual de balanço (Wobble)
+=======
+>>>>>>> Stashed changes
 image_angle = sin(current_time / 200) * 10;
 
-// ========== SINCRONIZAÇÃO DOS SINAIS (CORRIGIDO) ==========
-
-// Sincroniza a posição do sinal de menos
-if (instance_exists(inst_minus_signal)) {
-    inst_minus_signal.x = x;
-    inst_minus_signal.y = y;
-}
-
-// Sincroniza a posição do sinal imaginário "i"
-if (instance_exists(inst_imaginary_signal)) {
-    // Mantém o deslocamento de +20 para não sobrepor o número
-    inst_imaginary_signal.x = x + 20; 
-    inst_imaginary_signal.y = y;
-}
+// Sincroniza sinais
+if (instance_exists(inst_minus_signal)) { inst_minus_signal.x = x; inst_minus_signal.y = y; }
+if (instance_exists(inst_imaginary_signal)) { inst_imaginary_signal.x = x + 20; inst_imaginary_signal.y = y; }

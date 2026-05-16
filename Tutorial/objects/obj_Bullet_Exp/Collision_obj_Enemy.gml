@@ -1,19 +1,13 @@
-// Evento de Colisão com obj_Enemy
-
 if (instance_exists(other)) {
-    // Só processa se o inimigo ainda for imaginário
     if (other.is_imaginary) {
+        // 1. APENAS desliga o imaginário (O HP continua o que era no Spawner)
+        other.is_imaginary = false; 
         
-        // --- A TRANSFORMAÇÃO MATEMÁTICA ---
-        other.is_imaginary = false; // Remove o "i"
-        
-        // Se era 3i, vira -3. Se era -3i, vira 3 (ou você pode forçar sempre negativo)
-        // Vamos seguir a regra i^2 = -1:
-        other.hit_points *= -1; 
-        
-        // Atualiza a ALU visual (remove o "i" e coloca o sinal de "-")
+        // 2. Sincroniza o visual (O "i" some e o "-" aparece se o HP for < 0)
         other.change_num();
+        
+        // Feedback visual
+        effect_create_above(ef_spark, other.x, other.y, 1, c_purple);
     }
 }
-
-instance_destroy(); // Destrói a bala
+instance_destroy();

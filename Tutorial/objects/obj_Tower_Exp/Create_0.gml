@@ -1,14 +1,16 @@
 // Inherit the parent event
 event_inherited();
 
-radius = 50;
-bullet_damage = 5;
-rate_of_fire = 5
+name = "Exponencial";
+level = 1;
+bullet_damage = 1;
 upgrade_price = 100;
 
-name = "Bomb Tower";
+radius = 400;
+rate_of_fire = 0.7;
+can_shoot = true;
 
-offset_x = 16;
-offset_y = 16;
+// Variáveis de alvo
+target = noone;
 
 

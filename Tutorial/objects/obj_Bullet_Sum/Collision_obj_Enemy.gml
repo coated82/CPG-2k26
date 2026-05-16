@@ -1,5 +1,6 @@
 if (instance_exists(other)) {
-    // Envia o dano negativo (-2) para a função hurt
-    other.hurt(_damage);
+    // A bala da somadora também usa a função hurt unificada
+    other.hurt(_damage, source_tower_name);
 }
+
 instance_destroy();
