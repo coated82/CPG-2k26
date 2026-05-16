@@ -1,0 +1,19 @@
+# Pasta de cache e arquivos temporários (ESSENCIAL ignorar)
+.implicit/
+config.ini
+/options/main/inherited/
+
+# Arquivos de exportação e pacotes
+*.yyz
+*.zip
+*.tar.gz
+*.pkg
+*.app
+
+# Logs de erro que o GameMaker gera localmente
+ui_log.txt
+cmd_log.txt
+
+# Arquivos do sistema
+Thumbs.db
+.DS_Store
