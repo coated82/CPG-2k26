@@ -38,7 +38,11 @@
     {"name":"draw_set","order":2,"path":"scripts/draw_set/draw_set.yy",},
     {"name":"layers","order":4,"path":"scripts/layers/layers.yy",},
     {"name":"set_align","order":3,"path":"scripts/set_align/set_align.yy",},
+<<<<<<< Updated upstream
     {"name":"towers","order":5,"path":"scripts/towers/towers.yy",},
+=======
+    {"name":"bg","order":13,"path":"sprites/bg/bg.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_Bullet_Slow","order":9,"path":"sprites/spr_Bullet_Slow/spr_Bullet_Slow.yy",},
     {"name":"spr_Bullet","order":2,"path":"sprites/spr_Bullet/spr_Bullet.yy",},
     {"name":"spr_Enemy","order":1,"path":"sprites/spr_Enemy/spr_Enemy.yy",},
