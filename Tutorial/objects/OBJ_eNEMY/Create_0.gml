@@ -2,6 +2,9 @@ randomize();
 
 path_pause = false;  // pra fazer essa porra pausar
 
+// Um valor negativo garante que ele fique na frente do path e dos slots
+depth = -50;
+
 // Muda o taanho da imagem e da mascara de colisao
 // 1. Configurações Visuais
 image_xscale = 0.35;
