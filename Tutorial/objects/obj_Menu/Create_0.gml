@@ -45,3 +45,6 @@ atual = 0;
 
 // Margem do Menu
 margem = 0;
+
+// Tempo do Menu
+tempo_menu = 0;
