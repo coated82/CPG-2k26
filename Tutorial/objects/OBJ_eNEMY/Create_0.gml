@@ -97,3 +97,5 @@ path_start(current_path, speed_current, path_action_stop, true);
 
 // Primeira execução para definir o estado visual inicial
 change_num();
+
+speed_current = path_speed;  // Guarda a velocidade original

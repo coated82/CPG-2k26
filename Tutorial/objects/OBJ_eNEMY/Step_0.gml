@@ -14,6 +14,14 @@ if (global.pausado) {
     }
 }
 
+// ========== VERIFICA SE O POWER-UP S ESTÁ ATIVO ==========
+if (global.powerup_s_ativo && path_speed != speed_current * global.speed_multiplier) {
+    path_speed = speed_current * global.speed_multiplier;
+}
+if (!global.powerup_s_ativo && path_speed != speed_current) {
+    path_speed = speed_current;
+}
+
 // Efeito visual de balanço (Wobble)
 image_angle = sin(current_time / 200) * 10;
 
