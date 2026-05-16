@@ -18,5 +18,8 @@ instance_create_depth(0, 0, get_layer_depth(LAYER.ui), obj_Mouse);
 
 // add lighting
 
+//add wave spawner
+instance_create_depth(0, 0, get_layer_depth(LAYER.enemy), obj_Spawner_Wave);
+
 // remove self
 instance_destroy();
