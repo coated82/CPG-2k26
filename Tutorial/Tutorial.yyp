@@ -42,10 +42,8 @@
   },
   "name":"Tutorial",
   "resources":[
-    {"id":{"name":"fnt_Menu","path":"fonts/fnt_Menu/fnt_Menu.yy",},},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
     {"id":{"name":"obj_Init","path":"objects/obj_Init/obj_Init.yy",},},
-    {"id":{"name":"obj_Menu","path":"objects/obj_Menu/obj_Menu.yy",},},
     {"id":{"name":"obj_Room_Init","path":"objects/obj_Room_Init/obj_Room_Init.yy",},},
     {"id":{"name":"obj_UI_Bar","path":"objects/obj_UI_Bar/obj_UI_Bar.yy",},},
     {"id":{"name":"obj_UI_Close","path":"objects/obj_UI_Close/obj_UI_Close.yy",},},
@@ -54,7 +52,6 @@
     {"id":{"name":"obj_UI_Shop","path":"objects/obj_UI_Shop/obj_UI_Shop.yy",},},
     {"id":{"name":"rm_Init","path":"rooms/rm_Init/rm_Init.yy",},},
     {"id":{"name":"rm_MainGame","path":"rooms/rm_MainGame/rm_MainGame.yy",},},
-    {"id":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"id":{"name":"draw_set","path":"scripts/draw_set/draw_set.yy",},},
     {"id":{"name":"layers","path":"scripts/layers/layers.yy",},},
     {"id":{"name":"set_align","path":"scripts/set_align/set_align.yy",},},
@@ -82,7 +79,6 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_Init","path":"rooms/rm_Init/rm_Init.yy",},},
     {"roomId":{"name":"rm_MainGame","path":"rooms/rm_MainGame/rm_MainGame.yy",},},
-    {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
