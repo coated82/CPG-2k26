@@ -6,8 +6,8 @@ y = lerp(y, position_current_y, 0.15);
 var _margin_x = 64; // Recuo da esquerda do painel
 
 if (instance_exists(instance_button_close)) {
-    instance_button_close.x = x + 120;
-    instance_button_close.y = y + 550; // Botão de fechar lá embaixo
+    instance_button_close.x = x + _margin_x - 50;
+    instance_button_close.y = y + 380; // Botão de fechar lá embaixo
 }
 
 if (instance_exists(instance_tower_sub)) {
