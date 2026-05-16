@@ -1,7 +1,35 @@
 {
+<<<<<<< Updated upstream
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"obj_Minus_Signal","order":1,"path":"objects/obj_Minus_Signal/obj_Minus_Signal.yy",},
     {"name":"spr_MinusModifier","order":1,"path":"sprites/spr_MinusModifier/spr_MinusModifier.yy",},
+=======
+  "FolderOrderSettings":[
+    {"name":"Bullets","order":10,"path":"folders/Objects/Bullets.yy",},
+    {"name":"Towers","order":8,"path":"folders/Objects/Towers.yy",},
+    {"name":"UI","order":9,"path":"folders/Objects/UI.yy",},
+    {"name":"Bullets","order":1,"path":"folders/Sprites/Bullets.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"obj_audio_controler","order":2,"path":"objects/obj_audio_controler/obj_audio_controler.yy",},
+    {"name":"obj_Bullet_Player","order":1,"path":"objects/obj_Bullet_Player/obj_Bullet_Player.yy",},
+    {"name":"obj_Bullet_Slow","order":2,"path":"objects/obj_Bullet_Slow/obj_Bullet_Slow.yy",},
+    {"name":"obj_Effect_MoneyText","order":12,"path":"objects/obj_Effect_MoneyText/obj_Effect_MoneyText.yy",},
+    {"name":"obj_Enemy","order":11,"path":"objects/obj_Enemy/obj_Enemy.yy",},
+    {"name":"obj_Menu","order":1,"path":"objects/obj_Menu/obj_Menu.yy",},
+    {"name":"obj_Mouse","order":4,"path":"objects/obj_Mouse/obj_Mouse.yy",},
+    {"name":"obj_Placeable","order":7,"path":"objects/obj_Placeable/obj_Placeable.yy",},
+    {"name":"obj_Room_Init","order":3,"path":"objects/obj_Room_Init/obj_Room_Init.yy",},
+    {"name":"obj_slider_volume","order":5,"path":"objects/obj_slider_volume/obj_slider_volume.yy",},
+    {"name":"obj_Spawner_Wave","order":6,"path":"objects/obj_Spawner_Wave/obj_Spawner_Wave.yy",},
+    {"name":"obj_Tower_Mult","order":1,"path":"objects/obj_Tower_Mult/obj_Tower_Mult.yy",},
+    {"name":"obj_UI_Tower_Mult","order":2,"path":"objects/obj_UI_Tower_Mult/obj_UI_Tower_Mult.yy",},
+    {"name":"obj_UI_Tower_Sum","order":1,"path":"objects/obj_UI_Tower_Sum/obj_UI_Tower_Sum.yy",},
+    {"name":"spr_Bullet_Slow","order":2,"path":"sprites/spr_Bullet_Slow/spr_Bullet_Slow.yy",},
+    {"name":"spr_Bullet","order":1,"path":"sprites/spr_Bullet/spr_Bullet.yy",},
+    {"name":"spr_Tower_Mult","order":2,"path":"sprites/spr_Tower_Mult/spr_Tower_Mult.yy",},
+    {"name":"spr_Tower_Sum","order":1,"path":"sprites/spr_Tower_Sum/spr_Tower_Sum.yy",},
+>>>>>>> Stashed changes
   ],
 }

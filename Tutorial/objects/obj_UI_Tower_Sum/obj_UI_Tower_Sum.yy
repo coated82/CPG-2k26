@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Bullet_Slow",
+  "%Name":"obj_UI_Tower_Sum",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_Enemy","path":"objects/obj_Enemy/obj_Enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Bullet_Slow",
+  "name":"obj_UI_Tower_Sum",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bullets",
-    "path":"folders/Objects/Bullets.yy",
+    "name":"Towers",
+    "path":"folders/Objects/UI/Towers.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_UI_Tower_Parent",
+    "path":"objects/obj_UI_Tower_Parent/obj_UI_Tower_Parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Bullet_Slow",
-    "path":"sprites/spr_Bullet_Slow/spr_Bullet_Slow.yy",
+    "name":"spr_Tower_Sum",
+    "path":"sprites/spr_Tower_Sum/spr_Tower_Sum.yy",
   },
   "spriteMaskId":null,
   "visible":true,

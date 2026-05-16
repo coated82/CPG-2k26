@@ -20,6 +20,7 @@ if (instance_exists(target)) {
         _bullet.speed = 10;
         _bullet.image_angle = _bullet.direction;
         _bullet._damage = bullet_damage;
+		
     }
 } else {
     target = noone;

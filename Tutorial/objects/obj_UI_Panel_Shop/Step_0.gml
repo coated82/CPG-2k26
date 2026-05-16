@@ -1,28 +1,41 @@
-// Movimento Suave do Painel
-x = lerp(x, position_current_x, 0.1);
-y = lerp(y, position_current_y, 0.1);
+// 1. Movimento Suave (Slide)
+x = lerp(x, position_current_x, 0.15);
+y = lerp(y, position_current_y, 0.15);
 
-// Atualizar posição e visibilidade dos filhos
+// 2. Posicionamento Relativo dos Botões (Organização Vertical)
+var _margin_x = 64; // Recuo da esquerda do painel
+
 if (instance_exists(instance_button_close)) {
-    instance_button_close.x = x;
-    instance_button_close.y = y + 220; // Ajuste para o rodapé do menu
-    instance_button_close.visible = visible;
+    instance_button_close.x = x + 120;
+    instance_button_close.y = y + 550; // Botão de fechar lá embaixo
 }
 
 if (instance_exists(instance_tower_machinegun)) {
-    instance_tower_machinegun.x = x;
-    instance_tower_machinegun.y = y - 100; // Torre superior
-    instance_tower_machinegun.visible = visible;
+    instance_tower_machinegun.x = x + _margin_x - 50;
+    instance_tower_machinegun.y = y - 200;
 }
 
 if (instance_exists(instance_tower_bomb)) {
-    instance_tower_bomb.x = x;
-    instance_tower_bomb.y = y;       // Torre central
-    instance_tower_bomb.visible = visible;
+    instance_tower_bomb.x = x + _margin_x - 50;
+    instance_tower_bomb.y = y - 100;
 }
 
 if (instance_exists(instance_tower_slow)) {
-    instance_tower_slow.x = x;
-    instance_tower_slow.y = y + 100; // Torre inferior
-    instance_tower_slow.visible = visible;
+    instance_tower_slow.x = x + _margin_x - 50;
+    instance_tower_slow.y = y + 0;
+}
+
+if (instance_exists(instance_tower_sum)) {
+    instance_tower_sum.x = x + _margin_x - 50;
+    instance_tower_sum.y = y + 100; // Somadora logo abaixo da Slow
+}
+
+if (instance_exists(instance_tower_mult)) {
+    instance_tower_mult.x = x + _margin_x - 50;
+    instance_tower_mult.y = y + 200;
+}
+
+// 3. Otimização: Se o painel sumiu da tela, desativa visibilidade
+if (abs(x - position_hidden_x) < 1) {
+    visible = false;
 }
