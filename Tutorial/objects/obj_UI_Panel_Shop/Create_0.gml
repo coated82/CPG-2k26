@@ -20,8 +20,8 @@ instance_button_close.parent = id;
 instance_tower_sub = instance_create_depth(x, y, _layer_depth, obj_UI_Tower_Sub);
 instance_tower_sub.parent = id;
 
-instance_tower_bomb = instance_create_depth(x, y, _layer_depth, obj_UI_Tower_Bomb);
-instance_tower_bomb.parent = id;
+instance_tower_exp = instance_create_depth(x, y, _layer_depth, obj_UI_Tower_Exp);
+instance_tower_exp.parent = id;
 
 instance_tower_div = instance_create_depth(x, y, _layer_depth, obj_UI_Tower_Div);
 instance_tower_div.parent = id;

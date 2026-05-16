@@ -2,7 +2,7 @@
 event_inherited();
 
 #region TOWER INFORMATION
-	name = "Bomb Tower";
+	name = "Expinencial";
 	cost = 50;
 	image = spr_Tower_Bomb;
 #endregion

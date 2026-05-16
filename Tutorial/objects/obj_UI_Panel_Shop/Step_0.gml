@@ -15,9 +15,9 @@ if (instance_exists(instance_tower_sub)) {
     instance_tower_sub.y = y - 200;
 }
 
-if (instance_exists(instance_tower_bomb)) {
-    instance_tower_bomb.x = x + _margin_x - 50;
-    instance_tower_bomb.y = y - 100;
+if (instance_exists(instance_tower_exp)) {
+    instance_tower_exp.x = x + _margin_x - 50;
+    instance_tower_exp.y = y - 100;
 }
 
 if (instance_exists(instance_tower_div)) {

@@ -1,3 +1,5 @@
+if (global.pausado) exit;
+
 // 1. WATCHDOG: Limpa o alvo se ele deixou de existir
 if (!instance_exists(target)) target = noone;
 
