@@ -1,47 +1,44 @@
-// 1. Configurações de Alinhamento para o Título
-draw_set_font(fnt_Menu);
-draw_set_halign(fa_center); // Centraliza horizontalmente o eixo
-draw_set_valign(fa_middle); // Centraliza verticalmente o eixo
+// ========== TÍTULO ANIMADO ==========
+var _gx = display_get_gui_width() / 2;  // Centraliza na tela
+var _gy = 120;
 
-// Incrementa o tempo
-tempo_menu += 1; 
-
-// Efeitos
+tempo_menu += 1;
 var _escala = 2 + (dsin(tempo_menu * 0.5) * 0.05);
 var _angulo = dsin(tempo_menu) * 5;
 
-// IMPORTANTE: Como alinhamos ao centro, o X deve ser a posição do MEIO do texto.
-// Se antes era 20 (no canto), agora talvez você queira algo como 150 ou o centro da tela.
-var _posX = 500; 
-var _posY = 120;
-
+draw_set_font(fnt_Menu);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
 draw_set_colour(c_white);
-draw_text_transformed(_posX, _posY, "Control + Paper", _escala, _escala, _angulo);
+draw_text_transformed(_gx, _gy, "CONTROL + PAPER", _escala, _escala, _angulo);
 
-// 2. RESETAR ALINHAMENTO para não quebrar o resto do menu
+// ========== MENU DE OPÇÕES ==========
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-draw_set_colour(-1);
 
-// 3. Loop do Menu (segue normal)
-for (var i = 0; i < array_length(menu); i++)
-{
-    var _cor = c_white;
-    draw_set_font(fnt_Menu);
-    
-    var _altura = string_height("I") * 1.5;
-    var _margem = 0;
-    
-    if(i == atual)
-    {
-        _cor = c_red;
-        _margem = margem;
+for (var i = 0; i < array_length(menu); i++) {
+    // Cor da opção
+    if (i == atual) {
+        draw_set_colour(c_red);
+        var _margem_atual = margem;
+    } else {
+        draw_set_colour(c_white);
+        var _margem_atual = 0;
     }
     
-    draw_set_colour(_cor);
-    // Note que o menu continua usando 40 porque resetamos o fa_left acima
-    draw_text(80 + _margem, 240 + _altura * i, menu[i].texto);
+    // Sombra (opcional, dá um charme a mais)
+    if (i == atual) {
+        draw_set_colour(c_black);
+        draw_text(menu_x + _margem_atual + 2, menu_y_base + (altura_linha * i) + 2, menu[i].texto);
+        draw_set_colour(c_red);
+    }
     
-    draw_set_colour(-1);
-    draw_set_font(-1);
+    // Texto principal
+    draw_text(menu_x + _margem_atual, menu_y_base + (altura_linha * i), menu[i].texto);
 }
+
+// ========== RESET DAS CORES ==========
+draw_set_colour(c_white);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_set_font(-1);

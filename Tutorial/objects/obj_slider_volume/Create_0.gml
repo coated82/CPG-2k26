@@ -1,7 +1,4 @@
-// Centraliza a barra no meio da tela
-x = room_width / 2;
-y = room_height / 2;
-
-largura_customizada = 400; 
+// NÃO use display_set_gui_size aqui - pode causar problemas
+arrastando = false;
 valor_volume = audio_get_master_gain(0);
-velocidade_ajuste = 0.02;
+largura_customizada = 400; // Largura fixa da barra
