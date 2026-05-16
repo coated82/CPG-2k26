@@ -67,7 +67,6 @@ hurt = function(_amount = 1, _source_name = "") {
 current_path   = choose(pth_Top, pth_Bottom);
 speed_current  = random_range(0.8, 1.5) + (global.wave * 0.05);
 speed_original = speed_current;
-<<<<<<< Updated upstream
 speed_timer    = 1 * room_speed;
 
 // Inicia o movimento no path
@@ -77,6 +76,4 @@ path_start(current_path, speed_current, path_action_stop, true);
 change_num();
 
 speed_current = path_speed;  // Guarda a velocidade original
-=======
 path_start(current_path, speed_current, path_action_stop, true);
->>>>>>> Stashed changes
