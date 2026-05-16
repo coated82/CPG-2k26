@@ -1,6 +1,8 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"obj_Imaginary_i","order":1,"path":"objects/obj_Imaginary_i/obj_Imaginary_i.yy",},
     {"name":"obj_Tower_Sum","order":1,"path":"objects/obj_Tower_Sum/obj_Tower_Sum.yy",},
+    {"name":"spr_Imaginary_i","order":1,"path":"sprites/spr_Imaginary_i/spr_Imaginary_i.yy",},
   ],
 }

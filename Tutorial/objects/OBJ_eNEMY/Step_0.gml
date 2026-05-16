@@ -14,4 +14,20 @@ if (global.pausado) {
     }
 }
 
+// Efeito visual de balanço (Wobble)
 image_angle = sin(current_time / 200) * 10;
+
+// ========== SINCRONIZAÇÃO DOS SINAIS (CORRIGIDO) ==========
+
+// Sincroniza a posição do sinal de menos
+if (instance_exists(inst_minus_signal)) {
+    inst_minus_signal.x = x;
+    inst_minus_signal.y = y;
+}
+
+// Sincroniza a posição do sinal imaginário "i"
+if (instance_exists(inst_imaginary_signal)) {
+    // Mantém o deslocamento de +20 para não sobrepor o número
+    inst_imaginary_signal.x = x + 20; 
+    inst_imaginary_signal.y = y;
+}
