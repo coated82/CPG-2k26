@@ -1,19 +1,31 @@
+// ========== SISTEMA DE PAUSA ==========
 if (global.pausado) {
-    if (path_speed != 0) { speed_original = path_speed; path_speed = 0; }
+    if (path_speed != 0) { 
+        speed_original_backup = path_speed; // Salva a velocidade exata do momento (lenta ou normal)
+        path_speed = 0; 
+    }
     exit;
 } else if (path_speed == 0) {
-    path_speed = speed_original;
+    // Ao despausar, volta para o que era (lento ou normal)
+    path_speed = speed_original_backup;
 }
 
-// ========== VERIFICA SE O POWER-UP S ESTÁ ATIVO ==========
-if (global.powerup_s_ativo && path_speed != speed_current * global.speed_multiplier) {
-    path_speed = speed_current * global.speed_multiplier;
-}
-if (!global.powerup_s_ativo && path_speed != speed_current) {
-    path_speed = speed_current;
+// ========== LOGICA DE MOVIMENTO E POWER-UPS ==========
+// Só atualizamos a velocidade se não estiver sob efeito da Divisora
+if (!is_slowed) {
+    var _target_speed = speed_original;
+    
+    // Aplica multiplicador de power-up se ativo
+    if (global.powerup_s_ativo) {
+        _target_speed = speed_original * global.speed_multiplier;
+    }
+    
+    if (path_speed != _target_speed) {
+        path_speed = _target_speed;
+    }
 }
 
-// Efeito visual de balanço (Wobble)
+// Efeito visual de balanço
 image_angle = sin(current_time / 200) * 10;
 
 // Sincroniza sinais
