@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Tower_Slow",
-    "path":"sprites/spr_Tower_Slow/spr_Tower_Slow.yy",
+    "name":"division",
+    "path":"sprites/division/division.yy",
   },
   "spriteMaskId":null,
   "visible":true,

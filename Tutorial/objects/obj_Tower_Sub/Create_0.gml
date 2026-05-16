@@ -1,5 +1,8 @@
 event_inherited(); // Herda as variáveis do Pai
 
+image_xscale   = 0.18;
+image_yscale   = 0.18;
+
 // Dados de Identidade (Para o Painel de Upgrade ler)
 name = "Subtratora";
 level = 1;
