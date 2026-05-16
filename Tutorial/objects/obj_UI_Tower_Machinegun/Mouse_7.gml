@@ -8,3 +8,8 @@ global.instance_tower_to_build = obj_Tower_Machinegun;
 if (instance_exists(parent)) {
     parent.hide();
 }
+<<<<<<< Updated upstream
+=======
+
+show_debug_message("Preparado para construir Torre de Metralhadora");
+>>>>>>> Stashed changes

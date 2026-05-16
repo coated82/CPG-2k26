@@ -12,4 +12,8 @@ radius = 150;
 offset_x = 0;
 offset_y = 0;
 
+can_shoot = true;
+target = noone;
+
+
 alarm_set(1, 1);

@@ -16,3 +16,11 @@ path_start(
 	path_action_stop,
 	true
 );
+
+hurt = function(_amount = 1) {
+	hit_points -= _amount;
+	
+	if(hit_points <= 0){
+		instance_destroy();
+	}
+}
