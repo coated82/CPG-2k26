@@ -19,7 +19,6 @@
     {"$GMFolder":"","%Name":"UI","folderPath":"folders/Objects/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Buttons","folderPath":"folders/Objects/UI/Buttons.yy","name":"Buttons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Shop","folderPath":"folders/Objects/UI/Buttons/Shop.yy","name":"Shop","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Upgrades","folderPath":"folders/Objects/UI/Buttons/Upgrades.yy","name":"Upgrades","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Panels","folderPath":"folders/Objects/UI/Panels.yy","name":"Panels","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Towers","folderPath":"folders/Objects/UI/Towers.yy","name":"Towers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -64,12 +63,9 @@
     {"id":{"name":"obj_Tower_Parent","path":"objects/obj_Tower_Parent/obj_Tower_Parent.yy",},},
     {"id":{"name":"obj_Tower_Slow","path":"objects/obj_Tower_Slow/obj_Tower_Slow.yy",},},
     {"id":{"name":"obj_UI_Bar","path":"objects/obj_UI_Bar/obj_UI_Bar.yy",},},
-    {"id":{"name":"obj_UI_Close_Upgrade","path":"objects/obj_UI_Close_Upgrade/obj_UI_Close_Upgrade.yy",},},
     {"id":{"name":"obj_UI_Close","path":"objects/obj_UI_Close/obj_UI_Close.yy",},},
     {"id":{"name":"obj_UI_Master","path":"objects/obj_UI_Master/obj_UI_Master.yy",},},
     {"id":{"name":"obj_UI_Panel_Shop","path":"objects/obj_UI_Panel_Shop/obj_UI_Panel_Shop.yy",},},
-    {"id":{"name":"obj_UI_Panel_Upgrade","path":"objects/obj_UI_Panel_Upgrade/obj_UI_Panel_Upgrade.yy",},},
-    {"id":{"name":"obj_UI_Purchase_Upgrade","path":"objects/obj_UI_Purchase_Upgrade/obj_UI_Purchase_Upgrade.yy",},},
     {"id":{"name":"obj_UI_Shop","path":"objects/obj_UI_Shop/obj_UI_Shop.yy",},},
     {"id":{"name":"obj_UI_Tower_Bomb","path":"objects/obj_UI_Tower_Bomb/obj_UI_Tower_Bomb.yy",},},
     {"id":{"name":"obj_UI_Tower_Machinegun","path":"objects/obj_UI_Tower_Machinegun/obj_UI_Tower_Machinegun.yy",},},
@@ -84,11 +80,7 @@
     {"id":{"name":"draw_set","path":"scripts/draw_set/draw_set.yy",},},
     {"id":{"name":"layers","path":"scripts/layers/layers.yy",},},
     {"id":{"name":"set_align","path":"scripts/set_align/set_align.yy",},},
-<<<<<<< Updated upstream
     {"id":{"name":"snd_musica_tema","path":"sounds/snd_musica_tema/snd_musica_tema.yy",},},
-=======
-    {"id":{"name":"towers","path":"scripts/towers/towers.yy",},},
->>>>>>> Stashed changes
     {"id":{"name":"spr_Bullet_Slow","path":"sprites/spr_Bullet_Slow/spr_Bullet_Slow.yy",},},
     {"id":{"name":"spr_Bullet","path":"sprites/spr_Bullet/spr_Bullet.yy",},},
     {"id":{"name":"spr_Enemy","path":"sprites/spr_Enemy/spr_Enemy.yy",},},

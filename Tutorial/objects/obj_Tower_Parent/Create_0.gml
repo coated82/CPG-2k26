@@ -14,14 +14,6 @@ offset_y = 0;
 
 can_shoot = true;
 target = noone;
-is_selected = false;
 
 
 alarm_set(1, 1);
-
-upgrade = function() {
-	level += 1;
-	bullet_damage = bullet_damage * 2;
-	upgrade_price = upgrade_price + (upgrade_price/5);
-	radius = radius + (radius / 10);
-}
