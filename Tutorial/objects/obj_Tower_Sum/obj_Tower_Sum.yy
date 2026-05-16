@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_plus_tower",
-    "path":"sprites/spr_plus_tower/spr_plus_tower.yy",
+    "name":"spr_Tower_Sum",
+    "path":"sprites/spr_Tower_Sum/spr_Tower_Sum.yy",
   },
   "spriteMaskId":null,
   "visible":true,

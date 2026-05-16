@@ -37,12 +37,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_minus_tower",
-    "path":"sprites/spr_minus_tower/spr_minus_tower.yy",
+    "name":"spr_Tower_MachineGun",
+    "path":"sprites/spr_Tower_MachineGun/spr_Tower_MachineGun.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_minus_tower",
-    "path":"sprites/spr_minus_tower/spr_minus_tower.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
