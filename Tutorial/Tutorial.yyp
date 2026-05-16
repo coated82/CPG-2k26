@@ -82,6 +82,7 @@
     {"id":{"name":"spr_Icon_Upgrade","path":"sprites/spr_Icon_Upgrade/spr_Icon_Upgrade.yy",},},
     {"id":{"name":"spr_Lighting_Cutout_32","path":"sprites/spr_Lighting_Cutout_32/spr_Lighting_Cutout_32.yy",},},
     {"id":{"name":"spr_Lighting_Cutout","path":"sprites/spr_Lighting_Cutout/spr_Lighting_Cutout.yy",},},
+    {"id":{"name":"spr_Menu","path":"sprites/spr_Menu/spr_Menu.yy",},},
     {"id":{"name":"spr_Placeable","path":"sprites/spr_Placeable/spr_Placeable.yy",},},
     {"id":{"name":"spr_Tileset","path":"sprites/spr_Tileset/spr_Tileset.yy",},},
     {"id":{"name":"spr_Tower_Bomb","path":"sprites/spr_Tower_Bomb/spr_Tower_Bomb.yy",},},

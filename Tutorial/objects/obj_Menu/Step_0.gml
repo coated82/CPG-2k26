@@ -22,4 +22,4 @@ if (keyboard_check_pressed(vk_enter))
 }
 
 // Fazendo o valor da margem almentar
-margem = lerp(margem, 20, .2);
+margem = lerp(margem, 60, .1);

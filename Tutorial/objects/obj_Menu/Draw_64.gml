@@ -12,8 +12,8 @@ var _angulo = dsin(tempo_menu) * 5;
 
 // IMPORTANTE: Como alinhamos ao centro, o X deve ser a posição do MEIO do texto.
 // Se antes era 20 (no canto), agora talvez você queira algo como 150 ou o centro da tela.
-var _posX = 250; 
-var _posY = 80;
+var _posX = 500; 
+var _posY = 120;
 
 draw_set_colour(c_white);
 draw_text_transformed(_posX, _posY, "Control + Paper", _escala, _escala, _angulo);
@@ -40,7 +40,7 @@ for (var i = 0; i < array_length(menu); i++)
     
     draw_set_colour(_cor);
     // Note que o menu continua usando 40 porque resetamos o fa_left acima
-    draw_text(40 + _margem, 180 + _altura * i, menu[i].texto);
+    draw_text(80 + _margem, 240 + _altura * i, menu[i].texto);
     
     draw_set_colour(-1);
     draw_set_font(-1);

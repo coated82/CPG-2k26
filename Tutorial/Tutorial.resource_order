@@ -37,6 +37,7 @@
     {"name":"spr_Icon_Sell","order":6,"path":"sprites/spr_Icon_Sell/spr_Icon_Sell.yy",},
     {"name":"spr_Icon_Upgrade","order":5,"path":"sprites/spr_Icon_Upgrade/spr_Icon_Upgrade.yy",},
     {"name":"spr_Lighting_Cutout_32","order":1,"path":"sprites/spr_Lighting_Cutout_32/spr_Lighting_Cutout_32.yy",},
+    {"name":"spr_Menu","order":11,"path":"sprites/spr_Menu/spr_Menu.yy",},
     {"name":"spr_Placeable","order":8,"path":"sprites/spr_Placeable/spr_Placeable.yy",},
     {"name":"spr_Tower_Bomb","order":1,"path":"sprites/spr_Tower_Bomb/spr_Tower_Bomb.yy",},
     {"name":"spr_Tower_Slow","order":2,"path":"sprites/spr_Tower_Slow/spr_Tower_Slow.yy",},
