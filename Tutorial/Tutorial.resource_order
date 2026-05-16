@@ -7,6 +7,7 @@
     {"name":"Towers","order":4,"path":"folders/Objects/UI/Towers.yy",},
   ],
   "ResourceOrderSettings":[
+<<<<<<< Updated upstream
     {"name":"obj_Bullet_Player","order":8,"path":"objects/obj_Bullet_Player/obj_Bullet_Player.yy",},
     {"name":"obj_Bullet_Slow","order":10,"path":"objects/obj_Bullet_Slow/obj_Bullet_Slow.yy",},
     {"name":"obj_Enemy","order":9,"path":"objects/obj_Enemy/obj_Enemy.yy",},
@@ -15,6 +16,16 @@
     {"name":"obj_Mouse","order":4,"path":"objects/obj_Mouse/obj_Mouse.yy",},
     {"name":"obj_Placeable","order":5,"path":"objects/obj_Placeable/obj_Placeable.yy",},
     {"name":"obj_Spawner_Wave","order":6,"path":"objects/obj_Spawner_Wave/obj_Spawner_Wave.yy",},
+=======
+    {"name":"obj_audio_maneger","order":15,"path":"objects/obj_audio_maneger/obj_audio_maneger.yy",},
+    {"name":"obj_Enemy","order":4,"path":"objects/obj_Enemy/obj_Enemy.yy",},
+    {"name":"obj_Init","order":8,"path":"objects/obj_Init/obj_Init.yy",},
+    {"name":"obj_Menu","order":14,"path":"objects/obj_Menu/obj_Menu.yy",},
+    {"name":"obj_Mouse","order":12,"path":"objects/obj_Mouse/obj_Mouse.yy",},
+    {"name":"obj_Placeable","order":13,"path":"objects/obj_Placeable/obj_Placeable.yy",},
+    {"name":"obj_Room_Init","order":7,"path":"objects/obj_Room_Init/obj_Room_Init.yy",},
+    {"name":"obj_Spawner_Wave","order":14,"path":"objects/obj_Spawner_Wave/obj_Spawner_Wave.yy",},
+>>>>>>> Stashed changes
     {"name":"obj_Tower_Machinegun","order":1,"path":"objects/obj_Tower_Machinegun/obj_Tower_Machinegun.yy",},
     {"name":"obj_Tower_Parent","order":2,"path":"objects/obj_Tower_Parent/obj_Tower_Parent.yy",},
     {"name":"obj_Tower_Slow","order":3,"path":"objects/obj_Tower_Slow/obj_Tower_Slow.yy",},
@@ -31,6 +42,7 @@
     {"name":"draw_set","order":2,"path":"scripts/draw_set/draw_set.yy",},
     {"name":"layers","order":4,"path":"scripts/layers/layers.yy",},
     {"name":"set_align","order":3,"path":"scripts/set_align/set_align.yy",},
+    {"name":"snd_musica_tema","order":1,"path":"sounds/snd_musica_tema/snd_musica_tema.yy",},
     {"name":"spr_Bullet_Slow","order":9,"path":"sprites/spr_Bullet_Slow/spr_Bullet_Slow.yy",},
     {"name":"spr_Bullet","order":2,"path":"sprites/spr_Bullet/spr_Bullet.yy",},
     {"name":"spr_Enemy","order":1,"path":"sprites/spr_Enemy/spr_Enemy.yy",},
