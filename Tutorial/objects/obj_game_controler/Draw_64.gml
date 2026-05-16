@@ -16,11 +16,11 @@ if (global.pausado) {
     var _cy = display_get_gui_height() / 2;
     
     draw_text(_cx, _cy - 50, "JOGO PAUSADO");
-    draw_set_font(-1);
     draw_text(_cx, _cy, "Ctrl + P para continuar");
     draw_text(_cx, _cy + 40, "ESC - Menu Principal");
     
     // Reset
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
+	draw_set_font(-1);
 }
