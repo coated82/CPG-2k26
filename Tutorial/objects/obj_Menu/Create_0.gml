@@ -2,7 +2,7 @@
 menu = [
     { texto: "Jogar", funcao: function() { room_goto(rm_MainGame); } },
     { texto: "Opções", funcao: function() { room_goto(rm_opcoes); } },
-    { texto: "Comandos", funcao: function() { show_message("Controles: WASD para mover, Mouse para mirar"); } },
+    { texto: "Comandos", funcao: function() { room_goto(rm_comandos); } },
     { texto: "Sair", funcao: function() { game_end(); } }
 ];
 
