@@ -1,3 +1,4 @@
+if (global.pausado) exit;
 // 1. Procura alvo se estiver vazio
  target = collision_circle(x, y, radius, obj_Enemy, false, true);
 // 2. Se o alvo existe, atira

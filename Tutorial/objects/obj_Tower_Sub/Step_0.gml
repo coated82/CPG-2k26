@@ -1,3 +1,4 @@
+if (global.pausado) exit;
 // 1. Procura alvo se estiver vazio
 if (target == noone) {
     target = collision_circle(x, y, radius, obj_Enemy, false, true);

@@ -1,3 +1,4 @@
+if (global.pausado) exit;
 // 1. Busca Alvo (Prioridade para quem é < 0)
 event_inherited();
 /*

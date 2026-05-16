@@ -1,9 +1,14 @@
+<<<<<<< Updated upstream
 // 1. Limpeza de Ponteiro (Segurança contra "alvos fantasm")
 if (!instance_exists(target)) {
     target = noone;
 }
 
 // 2. Busca novo alvo se estiver vazio
+=======
+if (global.pausado) exit;
+// 1. Busca Alvo (Prioridade para quem é < 0)
+>>>>>>> Stashed changes
 if (target == noone) {
     var _inst = collision_circle(x, y, radius, obj_Enemy, false, true);
     if (_inst != noone) {

@@ -1,3 +1,4 @@
+if (global.pausado) exit;
 if(!can_shoot){
     return;
 }
