@@ -2,12 +2,12 @@
 event_inherited();
 
 #region TOWER INFORMATION
-	name = "Machine Gun";
+	name = "Divisora";
 	cost = 10;
-	image = spr_Tower_MachineGun;
+	image = spr_Tower_Slow;
 #endregion
 
 offset_x = 16;
-offset_y = 96;
+offset_y = 258;
 
 parent = noone;

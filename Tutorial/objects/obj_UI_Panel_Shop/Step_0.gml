@@ -10,9 +10,9 @@ if (instance_exists(instance_button_close)) {
     instance_button_close.y = y + 550; // Botão de fechar lá embaixo
 }
 
-if (instance_exists(instance_tower_machinegun)) {
-    instance_tower_machinegun.x = x + _margin_x - 50;
-    instance_tower_machinegun.y = y - 200;
+if (instance_exists(instance_tower_sub)) {
+    instance_tower_sub.x = x + _margin_x - 50;
+    instance_tower_sub.y = y - 200;
 }
 
 if (instance_exists(instance_tower_bomb)) {
@@ -20,9 +20,9 @@ if (instance_exists(instance_tower_bomb)) {
     instance_tower_bomb.y = y - 100;
 }
 
-if (instance_exists(instance_tower_slow)) {
-    instance_tower_slow.x = x + _margin_x - 50;
-    instance_tower_slow.y = y + 0;
+if (instance_exists(instance_tower_div)) {
+    instance_tower_div.x = x + _margin_x - 50;
+    instance_tower_div.y = y + 0;
 }
 
 if (instance_exists(instance_tower_sum)) {

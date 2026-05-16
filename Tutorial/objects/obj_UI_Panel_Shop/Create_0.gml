@@ -17,14 +17,14 @@ var _layer_depth = depth - 1;
 instance_button_close = instance_create_depth(x, y, _layer_depth, obj_UI_Close);
 instance_button_close.parent = id;
 
-instance_tower_machinegun = instance_create_depth(x, y, _layer_depth, obj_UI_Tower_Machinegun);
-instance_tower_machinegun.parent = id;
+instance_tower_sub = instance_create_depth(x, y, _layer_depth, obj_UI_Tower_Sub);
+instance_tower_sub.parent = id;
 
 instance_tower_bomb = instance_create_depth(x, y, _layer_depth, obj_UI_Tower_Bomb);
 instance_tower_bomb.parent = id;
 
-instance_tower_slow = instance_create_depth(x, y, _layer_depth, obj_UI_Tower_Slow);
-instance_tower_slow.parent = id;
+instance_tower_div = instance_create_depth(x, y, _layer_depth, obj_UI_Tower_Div);
+instance_tower_div.parent = id;
 
 instance_tower_sum = instance_create_depth(x, y, _layer_depth, obj_UI_Tower_Sum);
 instance_tower_sum.parent = id;
