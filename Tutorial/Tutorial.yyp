@@ -47,6 +47,7 @@
     {"id":{"name":"fnt_Menu","path":"fonts/fnt_Menu/fnt_Menu.yy",},},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
     {"id":{"name":"obj_Bullet_Player","path":"objects/obj_Bullet_Player/obj_Bullet_Player.yy",},},
+    {"id":{"name":"obj_Bullet_Slow","path":"objects/obj_Bullet_Slow/obj_Bullet_Slow.yy",},},
     {"id":{"name":"obj_Enemy","path":"objects/obj_Enemy/obj_Enemy.yy",},},
     {"id":{"name":"obj_Init","path":"objects/obj_Init/obj_Init.yy",},},
     {"id":{"name":"obj_Menu","path":"objects/obj_Menu/obj_Menu.yy",},},

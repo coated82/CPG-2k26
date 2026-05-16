@@ -8,6 +8,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_Bullet_Player","order":8,"path":"objects/obj_Bullet_Player/obj_Bullet_Player.yy",},
+    {"name":"obj_Bullet_Slow","order":10,"path":"objects/obj_Bullet_Slow/obj_Bullet_Slow.yy",},
     {"name":"obj_Enemy","order":9,"path":"objects/obj_Enemy/obj_Enemy.yy",},
     {"name":"obj_Init","order":1,"path":"objects/obj_Init/obj_Init.yy",},
     {"name":"obj_Menu","order":7,"path":"objects/obj_Menu/obj_Menu.yy",},
