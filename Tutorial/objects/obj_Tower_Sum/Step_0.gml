@@ -1,28 +1,34 @@
-// 1. Busca Alvo (Prioridade para quem é < 0)
+// 1. Limpeza de Ponteiro (Segurança contra "alvos fantasm")
+if (!instance_exists(target)) {
+    target = noone;
+}
+
+// 2. Busca novo alvo se estiver vazio
 if (target == noone) {
-    var _enemy = instance_nearest(x, y, obj_Enemy); // Ou seu sistema de detecção
-    if (_enemy != noone && point_distance(x, y, _enemy.x, _enemy.y) <= radius) {
-        if (_enemy.valor < 0) { // SÓ foca se for negativo
-            target = _enemy;
+    var _inst = collision_circle(x, y, radius, obj_Enemy, false, true);
+    if (_inst != noone) {
+        // Filtro: Mira apenas se hit_points for negativo
+        if (variable_instance_exists(_inst, "hit_points") && _inst.hit_points < 0) {
+            target = _inst;
         }
     }
 }
 
-// 2. Executa o Tiro
+// 3. Lógica de Disparo
 if (instance_exists(target)) {
-    // Se o alvo morreu, ficou positivo ou saiu do raio, perde o foco
-    if (point_distance(x, y, target.x, target.y) > radius || target.valor >= 0) {
+    // Perda de foco se fugir ou se tornar positivo (hit_points >= 0)
+    if (point_distance(x, y, target.x, target.y) > radius || target.hit_points >= 0) {
         target = noone;
     } else if (can_shoot) {
         can_shoot = false;
-        alarm[2] = rate_of_fire;
         
-        // Cria a bala de SOMA
+        // Reset via Alarm 0 (Padrão clonado da Subtratora)
+        alarm[0] = rate_of_fire; 
+        
         var _bullet = instance_create_depth(x, y, depth - 1, obj_Bullet_Sum);
         _bullet.direction = point_direction(x, y, target.x, target.y);
-        _bullet.speed = 10;
+        _bullet.speed = 12;
+        _bullet.image_angle = _bullet.direction;
         _bullet._damage = bullet_damage;
-        
-        // play_audio(snd_Shoot_Sum); // Se você tiver um som específico
     }
 }
