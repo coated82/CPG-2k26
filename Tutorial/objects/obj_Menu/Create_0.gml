@@ -14,7 +14,7 @@ opcao2 =
 	
 	funcao : function()
 	{
-		show_message("Arruma isso pra jogar pra uma tela de opções de volume sla se vira programador")
+		room_goto(rm_opcoes);
 	},
 }
 opcao3 =
