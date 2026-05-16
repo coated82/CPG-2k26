@@ -10,6 +10,7 @@
     {"name":"spr_Bullet_Slow","order":9,"path":"sprites/spr_Bullet_Slow/spr_Bullet_Slow.yy",},
     {"name":"spr_Bullet","order":2,"path":"sprites/spr_Bullet/spr_Bullet.yy",},
     {"name":"spr_Enemy","order":1,"path":"sprites/spr_Enemy/spr_Enemy.yy",},
+    {"name":"spr_fonte_numeros","order":10,"path":"sprites/spr_fonte_numeros/spr_fonte_numeros.yy",},
     {"name":"spr_Icon_Sell","order":6,"path":"sprites/spr_Icon_Sell/spr_Icon_Sell.yy",},
     {"name":"spr_Icon_Upgrade","order":5,"path":"sprites/spr_Icon_Upgrade/spr_Icon_Upgrade.yy",},
     {"name":"spr_Lighting_Cutout_32","order":1,"path":"sprites/spr_Lighting_Cutout_32/spr_Lighting_Cutout_32.yy",},

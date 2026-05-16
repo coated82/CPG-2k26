@@ -49,6 +49,7 @@
     {"id":{"name":"spr_Bullet_Slow","path":"sprites/spr_Bullet_Slow/spr_Bullet_Slow.yy",},},
     {"id":{"name":"spr_Bullet","path":"sprites/spr_Bullet/spr_Bullet.yy",},},
     {"id":{"name":"spr_Enemy","path":"sprites/spr_Enemy/spr_Enemy.yy",},},
+    {"id":{"name":"spr_fonte_numeros","path":"sprites/spr_fonte_numeros/spr_fonte_numeros.yy",},},
     {"id":{"name":"spr_Icon_Sell","path":"sprites/spr_Icon_Sell/spr_Icon_Sell.yy",},},
     {"id":{"name":"spr_Icon_Upgrade","path":"sprites/spr_Icon_Upgrade/spr_Icon_Upgrade.yy",},},
     {"id":{"name":"spr_Lighting_Cutout_32","path":"sprites/spr_Lighting_Cutout_32/spr_Lighting_Cutout_32.yy",},},
