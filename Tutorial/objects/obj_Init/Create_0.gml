@@ -4,7 +4,7 @@
 global.cash_amount = 100;
 global.wave = 0;
 global.instance_tower_to_build = noone;
-global.hitpoints = 100;
+global.hitpoints = 6;
 global.selected_tower = noone;
 global.pausado = false;
 
