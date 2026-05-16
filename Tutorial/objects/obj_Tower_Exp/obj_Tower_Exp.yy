@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Tower_Bomb",
-    "path":"sprites/spr_Tower_Bomb/spr_Tower_Bomb.yy",
+    "name":"expo",
+    "path":"sprites/expo/expo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

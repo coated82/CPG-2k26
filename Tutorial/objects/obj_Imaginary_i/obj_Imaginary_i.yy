@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Imaginary_i",
-    "path":"sprites/spr_Imaginary_i/spr_Imaginary_i.yy",
+    "name":"imaginario",
+    "path":"sprites/imaginario/imaginario.yy",
   },
   "spriteMaskId":null,
   "visible":true,
