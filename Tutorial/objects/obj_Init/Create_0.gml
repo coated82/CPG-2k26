@@ -6,6 +6,7 @@ global.wave = 0;
 global.instance_tower_to_build = noone;
 global.hitpoints = 100;
 global.selected_tower = noone;
+global.pausado = false;
 
 room_goto(rm_Menu);
 

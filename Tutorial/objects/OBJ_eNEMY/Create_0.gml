@@ -1,5 +1,7 @@
 randomize();
 
+path_pause = false;  // pra fazer essa porra pausar
+
 // Muda o taanho da imagem e da mascara de colisao
 image_xscale = 0.35;
 image_yscale = 0.35;

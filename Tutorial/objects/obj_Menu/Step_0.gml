@@ -1,3 +1,5 @@
+if (global.pausado) exit;
+
 // ========== ENTRADA DO TECLADO ==========
 var _tecla_baixo = keyboard_check_pressed(vk_down);
 var _tecla_cima = keyboard_check_pressed(vk_up);

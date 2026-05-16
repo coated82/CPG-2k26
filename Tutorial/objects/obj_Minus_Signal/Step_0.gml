@@ -1,3 +1,5 @@
+if (global.pausado) exit;
+
 if (instance_exists(parent_obj))
 {
     var ang = degtorad(parent_obj.image_angle);

@@ -1,3 +1,5 @@
+if (global.pausado) exit;
+
 // Pegamos o centro da GUI atual
 var _gx = display_get_gui_width() / 2;
 var _gy = display_get_gui_height() / 2;

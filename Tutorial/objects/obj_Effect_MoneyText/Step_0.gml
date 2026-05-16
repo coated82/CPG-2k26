@@ -1,3 +1,5 @@
+if (global.pausado) exit;
+
 // Faz o texto subir lentamente
 y -= 1;
 

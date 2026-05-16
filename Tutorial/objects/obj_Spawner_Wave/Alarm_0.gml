@@ -1,3 +1,5 @@
+if (global.pausado) exit;
+
 // 1. Avança para a próxima wave
 global.wave += 1;
 

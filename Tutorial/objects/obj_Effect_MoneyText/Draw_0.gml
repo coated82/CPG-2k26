@@ -1,3 +1,5 @@
+if (global.pausado) exit;
+
 // Desenha o valor na tela
 draw_set_color(cor_texto);
 draw_set_alpha(image_alpha);

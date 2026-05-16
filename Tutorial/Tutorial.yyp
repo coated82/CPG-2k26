@@ -50,12 +50,12 @@
   "resources":[
     {"id":{"name":"fnt_Menu","path":"fonts/fnt_Menu/fnt_Menu.yy",},},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
-    {"id":{"name":"obj_audio_controler","path":"objects/obj_audio_controler/obj_audio_controler.yy",},},
     {"id":{"name":"obj_Bullet_Player","path":"objects/obj_Bullet_Player/obj_Bullet_Player.yy",},},
     {"id":{"name":"obj_Bullet_Slow","path":"objects/obj_Bullet_Slow/obj_Bullet_Slow.yy",},},
     {"id":{"name":"obj_Bullet_Sum","path":"objects/obj_Bullet_Sum/obj_Bullet_Sum.yy",},},
     {"id":{"name":"obj_Effect_MoneyText","path":"objects/obj_Effect_MoneyText/obj_Effect_MoneyText.yy",},},
     {"id":{"name":"obj_Enemy","path":"objects/obj_Enemy/obj_Enemy.yy",},},
+    {"id":{"name":"obj_game_controler","path":"objects/obj_game_controler/obj_game_controler.yy",},},
     {"id":{"name":"obj_Init","path":"objects/obj_Init/obj_Init.yy",},},
     {"id":{"name":"obj_Menu","path":"objects/obj_Menu/obj_Menu.yy",},},
     {"id":{"name":"obj_Minus_Signal","path":"objects/obj_Minus_Signal/obj_Minus_Signal.yy",},},

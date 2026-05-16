@@ -1,3 +1,5 @@
+if (global.pausado) exit;
+
 // ========== TÍTULO ANIMADO ==========
 var _gx = display_get_gui_width() / 2;  // Centraliza na tela
 var _gy = 120;
