@@ -86,6 +86,7 @@
     {"id":{"name":"set_align","path":"scripts/set_align/set_align.yy",},},
     {"id":{"name":"towers","path":"scripts/towers/towers.yy",},},
     {"id":{"name":"snd_musica_tema","path":"sounds/snd_musica_tema/snd_musica_tema.yy",},},
+    {"id":{"name":"bg","path":"sprites/bg/bg.yy",},},
     {"id":{"name":"spr_Bullet_Slow","path":"sprites/spr_Bullet_Slow/spr_Bullet_Slow.yy",},},
     {"id":{"name":"spr_Bullet","path":"sprites/spr_Bullet/spr_Bullet.yy",},},
     {"id":{"name":"spr_Enemy","path":"sprites/spr_Enemy/spr_Enemy.yy",},},

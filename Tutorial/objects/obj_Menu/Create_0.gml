@@ -11,8 +11,8 @@ margem = 0;          // Efeito de deslize
 tempo_menu = 0;      // Para animações
 
 // ========== POSIÇÕES DO MENU ==========
-menu_x = 80;         // Posição X do menu
-menu_y_base = 240;   // Posição Y base
+menu_x = 200;         // Posição X do menu
+menu_y_base = 220;   // Posição Y base
 altura_linha = 50;   // Altura de cada opção (ajuste conforme sua fonte)
 
 // Remove essa linha problemática:

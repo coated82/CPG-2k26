@@ -25,7 +25,7 @@ var _mx = device_mouse_x_to_gui(0);
 var _my = device_mouse_y_to_gui(0);
 
 for (var i = 0; i < array_length(menu); i++) {
-    var _item_topo = menu_y_base + (altura_linha * i);
+    var _item_topo = menu_y_base + (altura_linha * i) + 50 * i;
     var _item_fundo = _item_topo + altura_linha;
     
     // Detecta hover do mouse
