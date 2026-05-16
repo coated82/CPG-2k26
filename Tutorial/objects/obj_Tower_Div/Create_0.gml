@@ -6,6 +6,3 @@ image_yscale   = 0.12;
 
 rate_of_fire = 0.25;
 radius = 50;
-
-offset_x = 16;
-offset_y = 16;

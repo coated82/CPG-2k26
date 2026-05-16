@@ -1,16 +1,9 @@
-// Inherit the parent event
-event_inherited();
-
-name = "Exponencial";
+name = "Bomba Exponencial";
 level = 1;
-bullet_damage = 1;
-upgrade_price = 100;
+upgrade_price = 0;
+bullet_damage = 0;
 
-radius = 400;
-rate_of_fire = 0.7;
-can_shoot = true;
+radius = 200; 
+detonation_time = 0.5 * game_get_speed(gamespeed_fps); 
 
-// Variáveis de alvo
-target = noone;
-
-
+alarm[0] = detonation_time;
