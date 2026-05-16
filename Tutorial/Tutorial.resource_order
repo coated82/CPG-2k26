@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_Tower_Sum","order":1,"path":"objects/obj_Tower_Sum/obj_Tower_Sum.yy",},
+  ],
 }

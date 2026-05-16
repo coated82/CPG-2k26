@@ -1,15 +1,18 @@
-event_inherited(); // Herda as variáveis do Pai
+event_inherited(); // Mantém o comportamento do Pai
 
-// Dados de Identidade (Para o Painel de Upgrade ler)
+// Dados de Identidade
 name = "Somadora";
 level = 1;
-bullet_damage = 5; // Aqui é o valor que ela vai SOMAR
 upgrade_price = 100;
 
-// Dados de funcionamento
+// Lógica Matemática:
+// No código da bala (valor -= damage), se usarmos -2, vira valor + 2.
+bullet_damage = -2; 
+
+// Funcionamento (Pode ajustar para ser diferente do subtrator)
 radius = 200;
-rate_of_fire = 40; // Intervalo entre tiros (frames)
+rate_of_fire = 20; 
 can_shoot = true;
 
-// Variáveis de alvo
+// Registrador de Alvo
 target = noone;

@@ -1,8 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
-name = "Machinegun Tower";
-rate_of_fire = 0.25;
+name = "Subrator";
+rate_of_fire = 0.7;
 upgrade_price = 75;
 
 offset_x = 16;

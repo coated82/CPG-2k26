@@ -1,8 +1,13 @@
-// 1. Incrementa o saldo global correto
-global.cash_amount += money_generation;
+// Evento de geração de dinheiro (ex: Alarm 1)
 
-// 2. Cria o efeito visual (que já criaste no passo anterior)
-instance_create_depth(x, y - 32, depth - 100, obj_Effect_MoneyText);
+// MULTIPLICADOR: O valor base (10) vezes o nível da torre
+var _ganho_atual = 15 * level; 
 
-// 3. REARMA O TIMER (Crucial para o loop continuar)
-alarm[2] = rate_of_fire;
+global.cash_amount += _ganho_atual;
+
+// Feedback visual (Importante para você ver que mudou!)
+var _pop = instance_create_depth(x, y - 32, depth - 100, obj_FloatText);
+_pop.text = "+$" + string(_ganho_atual);
+
+// Reinicia o clock do dinheiro
+alarm[1] = rate_of_fire;
