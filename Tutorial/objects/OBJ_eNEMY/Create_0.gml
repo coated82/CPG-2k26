@@ -80,7 +80,7 @@ hurt = function(_amount = 1, _source_name = "") {
 }
 
 // --- 6. INÍCIO ---
-current_path   = choose(pth_Top, pth_Bottom);
+current_path   = pathfinder();
 speed_original = random_range(0.8, 1.5) + (global.wave * 0.05);
 speed_current  = speed_original;
 

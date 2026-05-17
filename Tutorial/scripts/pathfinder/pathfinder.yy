@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"pathfinder",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"pathfinder",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
