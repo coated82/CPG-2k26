@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"Enemies","order":6,"path":"folders/Objects/Enemies.yy",},
     {"name":"Menus","order":2,"path":"folders/Objects/Menus.yy",},
     {"name":"Upgrades","order":1,"path":"folders/Objects/UI/Buttons/Upgrades.yy",},
     {"name":"Fases","order":3,"path":"folders/Sprites/Fases.yy",},
@@ -7,7 +8,9 @@
   "ResourceOrderSettings":[
     {"name":"obj_Bullet_Exp","order":1,"path":"objects/obj_Bullet_Exp/obj_Bullet_Exp.yy",},
     {"name":"obj_comandos","order":3,"path":"objects/obj_comandos/obj_comandos.yy",},
-    {"name":"obj_Enemy_Parent","order":4,"path":"objects/obj_Enemy_Parent/obj_Enemy_Parent.yy",},
+    {"name":"obj_Enemy_heal","order":3,"path":"objects/obj_Enemy_heal/obj_Enemy_heal.yy",},
+    {"name":"obj_Enemy_Parent","order":1,"path":"objects/obj_Enemy_Parent/obj_Enemy_Parent.yy",},
+    {"name":"obj_Enemy_X","order":2,"path":"objects/obj_Enemy_X/obj_Enemy_X.yy",},
     {"name":"obj_final_scream","order":5,"path":"objects/obj_final_scream/obj_final_scream.yy",},
     {"name":"obj_FloatText","order":5,"path":"objects/obj_FloatText/obj_FloatText.yy",},
     {"name":"obj_game_controler","order":1,"path":"objects/obj_game_controler/obj_game_controler.yy",},
@@ -38,5 +41,6 @@
     {"name":"spr_fase_quadratico","order":2,"path":"sprites/spr_fase_quadratico/spr_fase_quadratico.yy",},
     {"name":"spr_Imaginary_i","order":1,"path":"sprites/spr_Imaginary_i/spr_Imaginary_i.yy",},
     {"name":"Sprite40","order":3,"path":"sprites/Sprite40/Sprite40.yy",},
+    {"name":"Sprite41","order":1,"path":"sprites/Sprite41/Sprite41.yy",},
   ],
 }
