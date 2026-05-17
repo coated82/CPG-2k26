@@ -9,17 +9,17 @@ if (global.wave > 0) {
     var _nome = "";
     
     switch (global.fase_atual) {
-        case "paralelo":
+        case "Paralelo":
             _recorde_atual = global.recorde_paralelo;
-            _nome = "paralelo";
+            _nome = "Paralelo";
             break;
-        case "quadratico":
+        case "Quadratico":
             _recorde_atual = global.recorde_quadratico;
-            _nome = "quadratico";
+            _nome = "Quadratico";
             break;
-        case "euler":
+        case "Euler":
             _recorde_atual = global.recorde_euler;
-            _nome = "euler";
+            _nome = "Euler";
             break;
     }
     
@@ -55,6 +55,8 @@ global.pausado = false;
 global.wave = 0;
 global.hitpoints = 6;
 global.cash_amount = 100;
+global.gain_cash = 0;
+global.dinheiro_gasto = 0;
 
 // ========== ENTRADA DO TECLADO ==========
 var _tecla_baixo = keyboard_check_pressed(vk_down);

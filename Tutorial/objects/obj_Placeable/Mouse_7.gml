@@ -13,30 +13,40 @@ if (global.instance_tower_to_build != noone) {
     }
 
     // 2. SÓ EXECUTA SE O JOGADOR TIVER DINHEIRO E O SLOT NÃO ESTIVER OCUPADO
-    // Adicionei is_occupied aqui por segurança, embora o sistema já esconda o slot
     if (global.cash_amount >= _cost && !is_occupied) {
         
         global.cash_amount -= _cost;
+		global.dinheiro_gasto -= _cost;
 
         // 3. CALCULAR O CENTRO
         var _offset = 32; 
 
-        // 4. CRIAR A TORRE NO CENTRO
-        instance_create_depth(
+        // 4. CRIAR A TORRE E CAPTURAR A ID (O segredo está no var _t)
+        var _t = instance_create_depth(
             x + _offset, 
             y + _offset, 
             get_layer_depth(LAYER.towers),
             global.instance_tower_to_build
         );
 
+        // --- INJEÇÃO DE DADOS PARA A VENDA FUNCIONAR ---
+        if (instance_exists(_t)) {
+            _t.total_invested = _cost; // Registra quanto foi pago
+            _t.my_slot_x = x;          // Guarda o X deste slot para recriá-lo depois
+            _t.my_slot_y = y;          // Guarda o Y deste slot para recriá-lo depois
+            
+            // Força a escala correta se necessário
+            _t.image_xscale = 0.15;
+            _t.image_yscale = 0.15;
+        }
+
         // 5. TRATAMENTO ESPECIAL PARA A BOMBA EXPONENCIAL
         if (global.instance_tower_to_build == obj_Tower_Exp) {
-            // Se for a bomba, resetamos o slot para que ele possa ser usado de novo
             is_occupied = false;
             can_be_seen = false;
             image_index = 0;
         } else {
-            // Se for uma torre fixa, o slot é destruído para sempre
+            // Se for uma torre fixa, o slot é destruído (o botão de venda o trará de volta)
             instance_destroy();
         }
 

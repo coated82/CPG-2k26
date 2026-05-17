@@ -3,7 +3,7 @@ tower_name = "";
 tower_level = 0;
 tower_damage = 0;
 tower_update_cost = 0;
-selected_tower = noone; // Referência para a torre no mapa
+selected_tower = noone;
 
 // --- Configurações de Posição ---
 position_hidden_y = 896; 
@@ -24,21 +24,26 @@ instance_btn_close.parent = id;
 instance_btn_purchase = instance_create_depth(x, y, _depth, obj_UI_Purchase_Upgrade);
 instance_btn_purchase.parent = id;
 
+// NOVO: Botão de Venda
+instance_btn_sell = instance_create_depth(x, y, _depth, obj_UI_Sell_Button);
+instance_btn_sell.parent = id;
+
 // --- Funções de controle ---
-// No Create do obj_UI_Panel_Upgrade
 show = function(_inst) {
-    // Segurança: Se por algum motivo _inst for nulo, não executa
     if (!instance_exists(_inst)) return;
 
     selected_tower = _inst; 
     visible = true;
     position_current_y = position_shown_y;
     
-    // Agora o _inst existe, então podemos ler o .name sem crashar
     tower_name = _inst.name;
     tower_level = _inst.level;
     tower_damage = _inst.damage;
     tower_update_cost = _inst.upgrade_cost;
+    
+    // Notifica os botões sobre qual torre estamos olhando
+    instance_btn_purchase.target_tower = _inst;
+    instance_btn_sell.target_tower = _inst;
 }
 
 hide = function() {
