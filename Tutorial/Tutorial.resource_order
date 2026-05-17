@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"Menus","order":2,"path":"folders/Objects/Menus.yy",},
+    {"name":"Upgrades","order":1,"path":"folders/Objects/UI/Buttons/Upgrades.yy",},
     {"name":"Fases","order":3,"path":"folders/Sprites/Fases.yy",},
   ],
   "ResourceOrderSettings":[
@@ -15,6 +16,7 @@
     {"name":"obj_slider_volume","order":2,"path":"objects/obj_slider_volume/obj_slider_volume.yy",},
     {"name":"obj_Tooltip","order":3,"path":"objects/obj_Tooltip/obj_Tooltip.yy",},
     {"name":"obj_Tower_Sum","order":1,"path":"objects/obj_Tower_Sum/obj_Tower_Sum.yy",},
+    {"name":"obj_UI_Sell_Button","order":2,"path":"objects/obj_UI_Sell_Button/obj_UI_Sell_Button.yy",},
     {"name":"pth_Loop","order":1,"path":"paths/pth_Loop/pth_Loop.yy",},
     {"name":"pth_Straight","order":2,"path":"paths/pth_Straight/pth_Straight.yy",},
     {"name":"rm_comandos","order":1,"path":"rooms/rm_comandos/rm_comandos.yy",},
@@ -33,5 +35,6 @@
     {"name":"spr_fase_quadratico_ofc","order":4,"path":"sprites/spr_fase_quadratico_ofc/spr_fase_quadratico_ofc.yy",},
     {"name":"spr_fase_quadratico","order":2,"path":"sprites/spr_fase_quadratico/spr_fase_quadratico.yy",},
     {"name":"spr_Imaginary_i","order":1,"path":"sprites/spr_Imaginary_i/spr_Imaginary_i.yy",},
+    {"name":"Sprite40","order":3,"path":"sprites/Sprite40/Sprite40.yy",},
   ],
 }

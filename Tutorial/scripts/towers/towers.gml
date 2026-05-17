@@ -1,18 +1,10 @@
 function tower_select(_tower) {
-    // 1. Deseleciona qualquer torre anterior
     tower_deselect();
-    
-    // 2. Define a nova torre selecionada
     global.selected_tower = _tower;
     
-    // Verifica se a instância existe para evitar erros
     if (instance_exists(global.selected_tower)) {
         global.selected_tower.is_selected = true;
-    	
-        // 3. Avisa o Painel para aparecer, passando a torre como argumento
         if (instance_exists(obj_UI_Panel_Upgrade)) {
-            // Chamamos apenas o show passando a torre. 
-            // O próprio show() agora cuida de preencher o nome, level, etc.
             obj_UI_Panel_Upgrade.show(global.selected_tower);
         }
     }
@@ -26,8 +18,25 @@ function tower_deselect() {
     }
     global.selected_tower = noone;
     
-    // Esconde o painel se ele existir
     if (instance_exists(obj_UI_Panel_Upgrade)) {
         obj_UI_Panel_Upgrade.hide();
     }
+}
+
+// ADICIONE ESTA FUNÇÃO ABAIXO:
+function tower_spawn(_x, _y, _object, _cost) {
+    if (global.cash_amount >= _cost) {
+        global.cash_amount -= _cost;
+        
+        // Cria a torre
+        var _tower = instance_create_depth(_x, _y, -_y, _object);
+        
+        // --- VITAL PARA A VENDA ---
+        _tower.my_slot_x = _x;        // Salva onde o slot estava
+        _tower.my_slot_y = _y;        // Salva onde o slot estava
+        _tower.total_invested = _cost; // Registra o primeiro gasto
+        
+        return _tower;
+    }
+    return noone;
 }
