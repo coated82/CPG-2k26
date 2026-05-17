@@ -163,6 +163,7 @@
     {"id":{"name":"spr_UI_Store","path":"sprites/spr_UI_Store/spr_UI_Store.yy",},},
     {"id":{"name":"Sprite40","path":"sprites/Sprite40/Sprite40.yy",},},
     {"id":{"name":"Sprite41","path":"sprites/Sprite41/Sprite41.yy",},},
+    {"id":{"name":"xis","path":"sprites/xis/xis.yy",},},
     {"id":{"name":"ts_Default","path":"tilesets/ts_Default/ts_Default.yy",},},
   ],
   "resourceType":"GMProject",
