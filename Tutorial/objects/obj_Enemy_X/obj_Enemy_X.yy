@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite41",
-    "path":"sprites/Sprite41/Sprite41.yy",
+    "name":"xis",
+    "path":"sprites/xis/xis.yy",
   },
   "spriteMaskId":null,
   "visible":true,
