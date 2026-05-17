@@ -21,7 +21,6 @@
     {"name":"imaginario","order":2,"path":"sprites/imaginario/imaginario.yy",},
     {"name":"mult","order":1,"path":"sprites/mult/mult.yy",},
     {"name":"spr_Bullet_Exp","order":1,"path":"sprites/spr_Bullet_Exp/spr_Bullet_Exp.yy",},
-    {"name":"spr_fase_euler_ofc","order":3,"path":"sprites/spr_fase_euler_ofc/spr_fase_euler_ofc.yy",},
     {"name":"spr_fase_euler","order":1,"path":"sprites/spr_fase_euler/spr_fase_euler.yy",},
     {"name":"spr_fase_quadratico","order":2,"path":"sprites/spr_fase_quadratico/spr_fase_quadratico.yy",},
     {"name":"spr_Imaginary_i","order":1,"path":"sprites/spr_Imaginary_i/spr_Imaginary_i.yy",},
