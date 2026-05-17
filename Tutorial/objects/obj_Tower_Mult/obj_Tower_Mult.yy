@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Tower_Mult",
-    "path":"sprites/spr_Tower_Mult/spr_Tower_Mult.yy",
+    "name":"mult",
+    "path":"sprites/mult/mult.yy",
   },
   "spriteMaskId":null,
   "visible":true,

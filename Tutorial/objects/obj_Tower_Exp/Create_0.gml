@@ -1,3 +1,6 @@
+image_xscale = 0.15;
+image_yscale = 0.15;
+
 name = "Bomba Exponencial";
 level = 1;
 upgrade_price = 0;

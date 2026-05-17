@@ -1,5 +1,8 @@
 event_inherited(); // Puxa variáveis do obj_Tower_Parent
 
+image_xscale = 0.15;
+image_yscale = 0.15;
+
 name = "Multiplicadora";
 level = 1;
 upgrade_price = 150;
