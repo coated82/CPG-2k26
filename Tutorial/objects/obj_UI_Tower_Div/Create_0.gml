@@ -3,7 +3,7 @@ event_inherited();
 
 #region TOWER INFORMATION
 	name = "Divisora";
-	cost = 10;
+	cost = 120;
 	image = spr_Tower_Slow;
 #endregion
 

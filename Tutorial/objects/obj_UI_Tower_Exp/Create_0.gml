@@ -1,6 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
+tower_to_spawn = obj_Tower_Exp;
+
 #region TOWER INFORMATION
 	name = "Exponencial";
 	cost = 50;

@@ -142,3 +142,15 @@ if (!global.powerup_k_disponivel) {
         show_debug_message("✅ Power-Up K pronto!");
     }
 }
+
+// --- CANCELAR COMPRA COM ESC ---
+if (keyboard_check_pressed(vk_escape)) {
+    if (global.instance_tower_to_build != noone) {
+        global.instance_tower_to_build = noone;
+        obj_Mouse.selected_sprite = noone;
+        
+        with(obj_Placeable) {
+            can_be_seen = false;
+        }
+    }
+}

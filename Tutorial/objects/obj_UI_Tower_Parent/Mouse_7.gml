@@ -1,16 +1,18 @@
-//checar preço
+// 1. CHECAR PREÇO (Apenas para permitir a seleção)
 if(global.cash_amount < cost) {
-	return;
+    return;
 }
 
-global.cash_amount -= cost;
+// global.cash_amount -= cost; <--- REMOVA ESTA LINHA!
 
+// 2. MOSTRAR OS SLOTS DISPONÍVEIS
 with(obj_Placeable){
-		can_be_seen = true;
+    can_be_seen = true;
 }
 
-//Fechar loja
+// 3. FECHAR A LOJA E ANEXAR AO MOUSE
 parent.hide();
-
-//attach mouse
 obj_Mouse.selected_sprite = image;
+
+// 4. DIZER QUAL OBJETO SERÁ CRIADO (Importante para o Placeable saber)
+global.instance_tower_to_build = tower_to_spawn;
