@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_fonte_numeros",
-    "path":"sprites/spr_fonte_numeros/spr_fonte_numeros.yy",
+    "name":"spr_numeros_red",
+    "path":"sprites/spr_numeros_red/spr_numeros_red.yy",
   },
   "spriteMaskId":null,
   "visible":true,
