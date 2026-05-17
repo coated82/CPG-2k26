@@ -10,7 +10,7 @@ if (global.tipo_pausa == 1) {
     draw_set_halign(fa_center);
     draw_set_valign(fa_bottom);
     draw_set_colour(c_black);
-    draw_text(_cx, display_get_gui_height() - 30, "Pressione Ctrl + Alt + M para começar");
+    draw_text(_cx, display_get_gui_height() - 620, "Pressione Ctrl + Alt + M para começar");
     
     // Reset
     draw_set_halign(fa_left);
