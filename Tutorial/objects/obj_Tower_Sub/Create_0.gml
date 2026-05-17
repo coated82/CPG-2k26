@@ -1,9 +1,9 @@
-// 1. Defina as variáveis de IDENTIDADE antes de tudo
+// 1. Herda as variáveis do Pai (isso vai configurar o sistema de níveis base)
+event_inherited(); 
+
+// 2. Defina as variáveis de IDENTIDADE antes de tudo
 name = "Subtrator";
 cost = 80; // Custo de compra da torre
-
-// 2. Herda as variáveis do Pai (isso vai configurar o sistema de níveis base)
-event_inherited(); 
 
 // 3. Ajuste de Escala Visual
 image_xscale = 0.18;

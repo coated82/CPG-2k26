@@ -1,5 +1,5 @@
 // ============================================================================
-//                          CREATE - OBJ_TOWER_PARENT
+//                         CREATE - OBJ_TOWER_PARENT
 // ============================================================================
 
 #region INFORMAÇÕES BÁSICAS
@@ -7,11 +7,15 @@
     cost = 0;
     image = noone;
     tower_to_spawn = noone;
+    
+    // --- CONTROLE VISUAL ---
+    image_speed = 0; // Impede animação automática
+    image_index = 0; // Começa no frame 0 (Nível 1)
 #endregion
 
 #region SISTEMA DE UPGRADES E STATUS
-    level = 1;           // Começa no Nível 1
-    max_level = 5;       
+    level = 1;           
+    max_level = 6;       
     
     range = 160;         
     fire_rate = 60;      
@@ -21,7 +25,7 @@
     slow_power = 0.4;    
     money_bonus = 0;     
     
-    upgrade_cost = 150; // Valor base padrão
+    upgrade_cost = 150; 
 #endregion
 
 #region VARIÁVEIS DE CONTROLE INTERNO
@@ -29,10 +33,9 @@
     target = noone;      
     is_selected = false; 
     
-    // Rastreamento de Investimento e Posição
-    total_invested = 0;  // Será definido no momento da compra
-    my_slot_x = x;       // Salva posição inicial
-    my_slot_y = y;       // Salva posição inicial
+    total_invested = 0;  
+    my_slot_x = x;       
+    my_slot_y = y;
 #endregion
 
-depth = -y; // Profundidade dinâmica baseada na posição Y (melhor que -10 fixo)
+depth = -y;
