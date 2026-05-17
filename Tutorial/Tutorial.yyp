@@ -119,6 +119,7 @@
     {"id":{"name":"set_align","path":"scripts/set_align/set_align.yy",},},
     {"id":{"name":"towers","path":"scripts/towers/towers.yy",},},
     {"id":{"name":"snd_Balloons_Forever","path":"sounds/snd_Balloons_Forever/snd_Balloons_Forever.yy",},},
+    {"id":{"name":"snd_death","path":"sounds/snd_death/snd_death.yy",},},
     {"id":{"name":"snd_musica_tema","path":"sounds/snd_musica_tema/snd_musica_tema.yy",},},
     {"id":{"name":"bg","path":"sprites/bg/bg.yy",},},
     {"id":{"name":"division","path":"sprites/division/division.yy",},},

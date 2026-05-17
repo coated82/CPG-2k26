@@ -31,6 +31,7 @@
     {"name":"pathfinder","order":1,"path":"scripts/pathfinder/pathfinder.yy",},
     {"name":"scr_TowerFunctions","order":2,"path":"scripts/scr_TowerFunctions/scr_TowerFunctions.yy",},
     {"name":"snd_Balloons_Forever","order":1,"path":"sounds/snd_Balloons_Forever/snd_Balloons_Forever.yy",},
+    {"name":"snd_death","order":2,"path":"sounds/snd_death/snd_death.yy",},
     {"name":"expo","order":2,"path":"sprites/expo/expo.yy",},
     {"name":"imaginario","order":2,"path":"sprites/imaginario/imaginario.yy",},
     {"name":"mult","order":1,"path":"sprites/mult/mult.yy",},
