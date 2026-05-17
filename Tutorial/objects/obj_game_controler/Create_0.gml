@@ -16,29 +16,29 @@ global.contagem_timer = 0;
 // ========== POWER-UP K (Instâneo) ==========
 global.powerup_k_disponivel = true;
 global.powerup_k_cooldown = 0;
-global.powerup_k_cooldown_total = 20;  // 20 segundos de espera
+global.powerup_k_cooldown_total = 120;  // 120 segundos de espera
 
 
 // ========== POWER-UP S (Só inimigos lentos) ==========
 global.powerup_s_ativo = false;
 global.powerup_s_timer = 0;
-global.powerup_s_tempo_total = 10;  // 10 segundos de duração
+global.powerup_s_tempo_total = 5;  // 10 segundos de duração
 global.powerup_s_disponivel = true;
 
 
 global.powerup_s_cooldown = 0;
-global.powerup_s_cooldown_total = 15;  // 15 segundos de espera até poder usar de novo
+global.powerup_s_cooldown_total = 30;  // 30 segundos de espera até poder usar de novo
 global.speed_multiplier = 1;
 
 // ========== POWER-UP COPY/PASTE (Ctrl+C / Ctrl+V) ==========
 global.dinheiro_copiado = 0;                    // Dinheiro armazenado no Ctrl+C
 global.powerup_copy_disponivel = true;          // Ctrl+C disponível
 global.powerup_copy_cooldown = 0;
-global.powerup_copy_cooldown_total = 30;        // 30 segundos de espera para copiar
+global.powerup_copy_cooldown_total = 150;        // 150 segundos de espera para copiar
 
 global.powerup_paste_disponivel = true;         // Ctrl+V disponível
 global.powerup_paste_cooldown = 0;
-global.powerup_paste_cooldown_total = 30;       // 30 segundos de espera para colar
+global.powerup_paste_cooldown_total = 300;       // 300 segundos de espera para colar
 
 // ============================================================================
 //                          RECORDES DAS FASES
@@ -50,7 +50,7 @@ global.recorde_quadratico = 0;
 global.recorde_euler = 0;
 
 // Qual fase estamos jogando agora
-global.fase_atual = "paralelo";
+global.fase_atual = "Paralelo";
 
 // Wave atual da partida
 global.wave = 0;
@@ -65,17 +65,17 @@ function salvar_recorde() {
     
     // Pega o recorde atual baseado na fase
     switch (global.fase_atual) {
-        case "paralelo":
+        case "Paralelo":
             _recorde_atual = global.recorde_paralelo;
-            _nome = "paralelo";
+            _nome = "Paralelo";
             break;
-        case "quadratico":
+        case "Quadratico":
             _recorde_atual = global.recorde_quadratico;
-            _nome = "quadratico";
+            _nome = "Quadratico";
             break;
-        case "euler":
+        case "Euler":
             _recorde_atual = global.recorde_euler;
-            _nome = "euler";
+            _nome = "Euler";
             break;
     }
     
@@ -83,13 +83,13 @@ function salvar_recorde() {
     if (global.wave > _recorde_atual) {
         // Atualiza a variável global
         switch (global.fase_atual) {
-            case "paralelo":
+            case "Paralelo":
                 global.recorde_paralelo = global.wave;
                 break;
-            case "quadratico":
+            case "Quadratico":
                 global.recorde_quadratico = global.wave;
                 break;
-            case "euler":
+            case "Euler":
                 global.recorde_euler = global.wave;
                 break;
         }
