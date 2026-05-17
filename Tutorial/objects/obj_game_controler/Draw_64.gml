@@ -1,7 +1,90 @@
 // ============================================================================
+//                          TELA DE PRÉ-FASE (Pronto?)
+// ============================================================================
+if (global.tipo_pausa == 1) {
+    var _cx = display_get_gui_width() / 2;
+    var _cy = display_get_gui_height() / 2;
+    
+    // Fundo escuro
+    draw_set_colour(c_black);
+    draw_set_alpha(0.85);
+    draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
+    draw_set_alpha(1);
+    
+    // Texto piscando
+    draw_set_font(fnt_Menu);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    
+    var _alpha = 0.5 + (dsin(current_time * 0.005) * 0.3);
+    draw_set_alpha(_alpha);
+    draw_set_colour(c_white);
+    draw_text(_cx, _cy - 40, "PRONTO?");
+    
+    draw_set_alpha(1);
+    draw_set_colour(c_lime);
+    draw_text(_cx, _cy + 20, "Clique para começar");
+    
+    // Instrução
+    draw_set_font(-1);
+    draw_set_colour(c_gray);
+    draw_set_alpha(0.7);
+    draw_text(_cx, _cy + 80, "Clique com o mouse ou pressione ESPAÇO/ENTER");
+    
+    // Reset
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+    draw_set_font(-1);
+    draw_set_colour(c_white);
+    draw_set_alpha(1);
+}
+
+// ============================================================================
+//                          TELA DE CONTAGEM REGRESSIVA
+// ============================================================================
+if (global.tipo_pausa == 2) {
+    var _cx = display_get_gui_width() / 2;
+    var _cy = display_get_gui_height() / 2;
+    
+    // Fundo escuro
+    draw_set_colour(c_black);
+    draw_set_alpha(0.85);
+    draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
+    draw_set_alpha(1);
+    
+    // Número da contagem
+    draw_set_font(fnt_Menu);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    
+    // Cor baseada no número
+    switch(global.contagem_valor) {
+        case 3: draw_set_colour(c_red); break;
+        case 2: draw_set_colour(c_yellow); break;
+        case 1: draw_set_colour(c_lime); break;
+    }
+    
+    var _escala = 2.5 + (dsin(current_time * 0.01) * 0.2);
+    draw_text_transformed(_cx, _cy, string(global.contagem_valor), _escala, _escala, 0);
+    
+    // Texto "VAI!" quando acabar (opcional)
+    if (global.contagem_valor <= 0) {
+        draw_set_colour(c_lime);
+        draw_text(_cx, _cy + 100, "VAI!");
+    }
+    
+    // Reset
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+    draw_set_font(-1);
+    draw_set_colour(c_white);
+}
+
+// ============================================================================
 //                               MENU DE PAUSA
 // ============================================================================
-if (global.pausado) {
+// SÓ MOSTRA O MENU DE PAUSA se for pause normal (tipo_pausa == 0)
+if (global.pausado && global.tipo_pausa == 0) {
     // Fundo escuro
     draw_set_colour(c_black);
     draw_set_alpha(0.8);

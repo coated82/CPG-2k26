@@ -1,21 +1,67 @@
 // ============================================================================
-//                             SISTEMA DE PAUSA
+//                          SISTEMA DE PAUSA MODIFICADO
 // ============================================================================
-if (keyboard_check_pressed(ord("P")) && keyboard_check(vk_control)) {
-    global.pausado = !global.pausado;
-    if (global.pausado) {
-        show_debug_message("Jogo Pausado");
-    } else {
-        show_debug_message("Jogo Retomado");
+
+// Pause normal (Ctrl+P) - só funciona se não estiver em pré-fase
+if (global.tipo_pausa == 0) {
+    if (keyboard_check_pressed(ord("P")) && keyboard_check(vk_control)) {
+        global.pausado = !global.pausado;
+        if (global.pausado) {
+            show_debug_message("Jogo Pausado");
+        } else {
+            show_debug_message("Jogo Retomado");
+        }
     }
 }
 
-if (global.pausado) {
+// Lógica da contagem regressiva (tipo_pausa = 2)
+if (global.tipo_pausa == 2) {
+    global.pausado = true;  // Força o jogo a ficar pausado
+    
+    // Timer da contagem
+    if (global.contagem_timer > 0) {
+        global.contagem_timer--;
+    } else {
+        // Avança para o próximo número
+        global.contagem_valor--;
+        
+        if (global.contagem_valor >= 1) {
+            // Reinicia o timer para o próximo número
+            global.contagem_timer = room_speed;  // 1 segundo
+        } else {
+            // Contagem terminou - começa o jogo
+            global.tipo_pausa = 0;  // Volta ao modo normal
+            global.pausado = false;  // Despausa
+            global.contagem_valor = 3;  // Reseta para a próxima vez
+            show_debug_message("COMEÇOU!");
+        }
+    }
+}
+
+// Sair com ESC (só no pause normal)
+if (global.pausado && global.tipo_pausa == 0) {
     if (keyboard_check_pressed(vk_escape)) {
         global.pausado = false;
         room_goto(rm_Menu);
     }
-    exit;  // <-- SAI AQUI SE PAUSADO, ENTÃO NÃO EXECUTA O RESTO
+}
+
+// Verifica clique para começar (tipo_pausa = 1)
+if (global.tipo_pausa == 1) {
+    global.pausado = true;  // Força o jogo a ficar pausado
+    
+    if (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) {
+        // Muda para modo de contagem regressiva
+        global.tipo_pausa = 2;
+        global.contagem_valor = 3;
+        global.contagem_timer = room_speed;  // 1 segundo para cada número
+        show_debug_message("INICIANDO CONTAGEM...");
+    }
+}
+
+// Se estiver pausado por qualquer motivo, não executa o resto do jogo
+if (global.pausado) {
+    exit;
 }
 
 // ============================================================================

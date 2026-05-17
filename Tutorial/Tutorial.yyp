@@ -148,7 +148,6 @@
     {"id":{"name":"spr_UI_Close","path":"sprites/spr_UI_Close/spr_UI_Close.yy",},},
     {"id":{"name":"spr_UI_Panel","path":"sprites/spr_UI_Panel/spr_UI_Panel.yy",},},
     {"id":{"name":"spr_UI_Store","path":"sprites/spr_UI_Store/spr_UI_Store.yy",},},
-    {"id":{"name":"Sprite38","path":"sprites/Sprite38/Sprite38.yy",},},
     {"id":{"name":"ts_Default","path":"tilesets/ts_Default/ts_Default.yy",},},
   ],
   "resourceType":"GMProject",

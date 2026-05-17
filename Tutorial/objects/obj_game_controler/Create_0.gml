@@ -5,6 +5,14 @@ if (!audio_is_playing(snd_musica_tema))
     audio_play_sound(snd_musica_tema, 10, true);
 }
 
+// ========== TIPO DE PAUSA ==========
+// 0 = pause normal (Ctrl+P)
+// 1 = pré-fase (clique para começar)
+// 2 = contagem regressiva
+global.tipo_pausa = 0;
+global.contagem_valor = 3;  // Começa do 3
+global.contagem_timer = 0;
+
 // ========== POWER-UP K (Instâneo) ==========
 global.powerup_k_disponivel = true;
 global.powerup_k_cooldown = 0;

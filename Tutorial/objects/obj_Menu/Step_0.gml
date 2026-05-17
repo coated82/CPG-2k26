@@ -1,5 +1,16 @@
 if (global.pausado) exit;
 
+// ============================================================================
+//                          RESETAR TUDO
+// ============================================================================
+
+global.tipo_pausa = 0;
+global.pausado = false;
+global.wave = 0;
+
+global.hitpoints = 6;
+global.cash_amount = 100;
+
 // ========== ENTRADA DO TECLADO ==========
 var _tecla_baixo = keyboard_check_pressed(vk_down);
 var _tecla_cima = keyboard_check_pressed(vk_up);

@@ -1,4 +1,13 @@
 /// @description 
+// ============================================================================
+//                          INICIAR PRÉ-FASE
+// ============================================================================
+
+// Ativa o modo de pré-fase
+global.tipo_pausa = 1;
+global.pausado = true;  // Trava o jogo
+global.contagem_valor = 3;
+global.contagem_timer = 0;
 
 // initalize layers
 create_layer(LAYER.lighting);
