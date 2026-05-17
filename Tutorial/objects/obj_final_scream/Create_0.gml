@@ -30,6 +30,5 @@ global.powerup_paste_cooldown = 0;
 global.tipo_pausa = 0;
 global.pausado = false;
 global.pre_fase_ativa = false;
-global.wave = 0;
 
 show_debug_message("🔄 Todos os power-ups e cooldowns foram resetados!");
