@@ -1,4 +1,4 @@
-if (global.pausado) exit;
+
 
 // REGRA DE OURO: Só mostramos os slots se o jogador estiver com uma torre selecionada
 // Isso limpa o visual do seu mapa automaticamente.
