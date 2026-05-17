@@ -1,16 +1,20 @@
 function tower_select(_tower) {
+    // 1. Deseleciona qualquer torre anterior
     tower_deselect();
     
+    // 2. Define a nova torre selecionada
     global.selected_tower = _tower;
-    global.selected_tower.is_selected = true;
-	
-    if (instance_exists(obj_UI_Panel_Upgrade)) {
-        obj_UI_Panel_Upgrade.tower_name = global.selected_tower.name;
-        obj_UI_Panel_Upgrade.tower_level = global.selected_tower.level;
-        obj_UI_Panel_Upgrade.tower_damage = global.selected_tower.bullet_damage;
-        obj_UI_Panel_Upgrade.tower_update_cost = global.selected_tower.upgrade_price;
-        
-        obj_UI_Panel_Upgrade.show();
+    
+    // Verifica se a instância existe para evitar erros
+    if (instance_exists(global.selected_tower)) {
+        global.selected_tower.is_selected = true;
+    	
+        // 3. Avisa o Painel para aparecer, passando a torre como argumento
+        if (instance_exists(obj_UI_Panel_Upgrade)) {
+            // Chamamos apenas o show passando a torre. 
+            // O próprio show() agora cuida de preencher o nome, level, etc.
+            obj_UI_Panel_Upgrade.show(global.selected_tower);
+        }
     }
 }
 
@@ -22,6 +26,7 @@ function tower_deselect() {
     }
     global.selected_tower = noone;
     
+    // Esconde o painel se ele existir
     if (instance_exists(obj_UI_Panel_Upgrade)) {
         obj_UI_Panel_Upgrade.hide();
     }

@@ -1,0 +1,1 @@
+hp = 10; // Ou o valor inicial que você quer para os balões

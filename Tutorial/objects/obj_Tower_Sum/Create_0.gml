@@ -1,18 +1,20 @@
-event_inherited(); // Herda as variáveis do Pai
+event_inherited(); 
 
-image_xscale   = 0.15;
-image_yscale   = 0.15;
+image_xscale = 0.15;
+image_yscale = 0.15;
 
-// Dados de Identidade (Para o Painel de Upgrade ler)
+// Nomes padronizados para o Script de Upgrade e Painel
 name = "Somadora";
 level = 1;
-bullet_damage = 2; // Aqui é o valor que ela vai SOMAR
-upgrade_price = 100;
+max_level = 5; 
+bullet_damage = 2; 
+upgrade_cost = 100; // Mudei de upgrade_price para upgrade_cost (padrão que usamos)
 
 // Dados de funcionamento
-radius = 200;
-rate_of_fire = 0.75; // Intervalo entre tiros (frames)
+range = 200;        // Mudei de radius para range
+fire_rate = 45;     // Mudei para frames (45 frames = 0.75s em 60fps)
 can_shoot = true;
 
-// Variáveis de alvo
 target = noone;
+
+description = "Adiciona valor a números negativos.";

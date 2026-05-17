@@ -1,7 +1,8 @@
+// Evento de Colisão
 if (instance_exists(other)) {
-    // Passamos o dano E o nome da torre que disparou para o Firewall do inimigo
-    other.hurt(_damage, source_tower_name);
+    // Chama a função hurt do seu inimigo passando o dano e a fonte
+    other.hurt(damage, "Subtratora");
+    
+    // Destrói o tiro após o impacto
+    instance_destroy();
 }
-
-// Destrói a bala após o impacto
-instance_destroy();

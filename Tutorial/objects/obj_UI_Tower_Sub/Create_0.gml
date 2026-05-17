@@ -3,7 +3,7 @@ event_inherited();
 
 // 2. CONFIGURAÇÃO DA TORRE (Sobrescrevendo os valores do pai)
 #region TOWER INFORMATION
-	name = "Subtratora";
+	name = "Subtrator";
 	cost = 80;
 	image = spr_Tower_MachineGun; // Mantenha o nome exato do seu sprite aqui
     
@@ -11,7 +11,7 @@ event_inherited();
     // é obj_Tower_Sub ou obj_Tower_Sub_Real e use o correto abaixo:
 	tower_to_spawn = obj_Tower_Sub; 
     
-    description = "SUBTRATORA:\nRemove valores dos inimigos. Perfeita para destruir numeros positivos rapidamente!";
+    description = "SUBTRATOR:\nRemove valores dos inimigos. Perfeita para destruir numeros positivos rapidamente!";
 #endregion
 
 // 3. POSICIONAMENTO NA LOJA

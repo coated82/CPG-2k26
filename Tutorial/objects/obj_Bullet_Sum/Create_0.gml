@@ -1,4 +1,8 @@
-// Mesma lógica: inicialização segura
-_damage = 1;
-source_tower_name = ""; 
-speed = 10;
+// Inicializamos com valores padrão para segurança
+damage = 0;
+target = noone;
+speed = 0;
+direction = 0;
+
+// Opcional: Efeito visual
+image_blend = c_aqua; // Ou uma cor que combine com "Soma"

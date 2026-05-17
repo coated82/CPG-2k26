@@ -1,6 +1,7 @@
 if (instance_exists(other)) {
-    // A bala da somadora também usa a função hurt unificada
-    other.hurt(_damage, source_tower_name);
+    // Passamos o dano (que a torre definiu) e o nome da fonte
+    other.hurt(damage, "Somadora"); 
+    
+    // Destrói o tiro
+    instance_destroy();
 }
-
-instance_destroy();
