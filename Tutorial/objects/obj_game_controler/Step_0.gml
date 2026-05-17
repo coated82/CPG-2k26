@@ -46,11 +46,14 @@ if (global.pausado && global.tipo_pausa == 0) {
     }
 }
 
-// Verifica clique para começar (tipo_pausa = 1)
+// ============================================================================
+//                          PRÉ-FASE (Ctrl + Alt + M)
+// ============================================================================
 if (global.tipo_pausa == 1) {
     global.pausado = true;  // Força o jogo a ficar pausado
     
-    if (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) {
+    // Verifica Ctrl + Alt + M para começar
+    if (keyboard_check_pressed(ord("M")) && keyboard_check(vk_control) && keyboard_check(vk_alt)) {
         // Muda para modo de contagem regressiva
         global.tipo_pausa = 2;
         global.contagem_valor = 3;
@@ -109,7 +112,7 @@ if (keyboard_check_pressed(ord("S")) && keyboard_check(vk_control)) {
         global.speed_multiplier = 0.4;
         
         // Use o nome CORRETO do seu objeto inimigo
-        with (obj_Enemy) {  // <-- VERIFIQUE ESTE NOME!
+        with (obj_Enemy) {
             path_speed = speed_current * global.speed_multiplier;
         }
         show_debug_message("POWER-UP S ATIVADO! Câmera lenta por " + string(global.powerup_s_tempo_total) + " segundos");
@@ -121,8 +124,7 @@ if (keyboard_check_pressed(ord("S")) && keyboard_check(vk_control)) {
 // ============================================================================
 if (keyboard_check_pressed(ord("K")) && keyboard_check(vk_control)) {
     if (global.powerup_k_disponivel) {
-        // Use o nome CORRETO do seu objeto inimigo
-        with (obj_Enemy) {  // <-- VERIFIQUE ESTE NOME!
+        with (obj_Enemy) {
             instance_destroy();
         }
         global.powerup_k_disponivel = false;
@@ -142,8 +144,7 @@ if (global.powerup_s_ativo) {
         global.powerup_s_ativo = false;
         global.speed_multiplier = 1;
         
-        // Use o nome CORRETO do seu objeto inimigo
-        with (obj_Enemy) {  // <-- VERIFIQUE ESTE NOME!
+        with (obj_Enemy) {
             path_speed = speed_current;
         }
         
