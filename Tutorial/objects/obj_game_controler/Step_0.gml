@@ -124,8 +124,11 @@ if (keyboard_check_pressed(ord("S")) && keyboard_check(vk_control)) {
 // ============================================================================
 if (keyboard_check_pressed(ord("K")) && keyboard_check(vk_control)) {
     if (global.powerup_k_disponivel) {
+        // Mata todos os inimigos EXCETO obj_Enemy_X
         with (obj_Enemy) {
-            instance_destroy();
+            if (object_index != obj_Enemy_X) {
+                instance_destroy();
+            }
         }
         global.powerup_k_disponivel = false;
         global.powerup_k_cooldown = global.powerup_k_cooldown_total * room_speed;
