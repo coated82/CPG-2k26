@@ -120,6 +120,7 @@
     {"id":{"name":"spr_Bullet_Sum","path":"sprites/spr_Bullet_Sum/spr_Bullet_Sum.yy",},},
     {"id":{"name":"spr_Bullet","path":"sprites/spr_Bullet/spr_Bullet.yy",},},
     {"id":{"name":"spr_Enemy","path":"sprites/spr_Enemy/spr_Enemy.yy",},},
+    {"id":{"name":"spr_fase_euler_ofc","path":"sprites/spr_fase_euler_ofc/spr_fase_euler_ofc.yy",},},
     {"id":{"name":"spr_fase_euler","path":"sprites/spr_fase_euler/spr_fase_euler.yy",},},
     {"id":{"name":"spr_fase_parelelo","path":"sprites/spr_fase_parelelo/spr_fase_parelelo.yy",},},
     {"id":{"name":"spr_fase_quadratico","path":"sprites/spr_fase_quadratico/spr_fase_quadratico.yy",},},
