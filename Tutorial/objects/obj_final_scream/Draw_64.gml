@@ -57,7 +57,7 @@ draw_text(_cx, _y, "Dinheiro ganho: $" + string(global.gain_cash));
 _y += 50;
 
 // Lucro/Prejuízo
-var _saldo = global.gain_cash - global.dinheiro_gasto;
+var _saldo = global.gain_cash + global.dinheiro_gasto;
 if (_saldo >= 0) {
     draw_set_colour(c_lime);
     draw_text(_cx, _y, "Lucro: +$" + string(_saldo));
