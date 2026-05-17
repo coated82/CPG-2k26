@@ -7,6 +7,8 @@ global.instance_tower_to_build = noone;
 global.hitpoints = 6;
 global.selected_tower = noone;
 global.pausado = false;
+global.gain_cash = 0;
+global.dinheiro_gasto = 0;
 
 room_goto(rm_Menu);
 

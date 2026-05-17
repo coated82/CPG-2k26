@@ -73,6 +73,7 @@ hurt = function(_amount = 1, _source_name = "") {
         
         if (hit_points <= 0) { 
             global.cash_amount += 10;
+			global.gain_cash += 10;
             cleanup_signals();
             instance_destroy();
         }

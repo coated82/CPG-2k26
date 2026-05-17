@@ -17,6 +17,7 @@ if (global.instance_tower_to_build != noone) {
     if (global.cash_amount >= _cost && !is_occupied) {
         
         global.cash_amount -= _cost;
+		global.dinheiro_gasto -= _cost;
 
         // 3. CALCULAR O CENTRO
         var _offset = 32; 

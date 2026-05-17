@@ -5,7 +5,7 @@ global.hitpoints -= 1;
 
 // 2. Verificação de Condição de Parada (Game Over)
 if (global.hitpoints <= 0) {
-    room_goto(rm_Menu);
+    room_goto(rm_final_scream);
 }
 
 // 3. Limpeza de memória (SINAIS ÓRFÃOS)
