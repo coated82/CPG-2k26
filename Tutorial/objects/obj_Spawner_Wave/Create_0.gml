@@ -1,6 +1,12 @@
 global.wave = 0; 
-enemies_to_spawn = 0; // Quantos faltam nascer na wave atual
-spawn_delay = 30;     // Intervalo entre um inimigo e outro (em frames)
+enemies_to_spawn = 0; 
+spawn_delay = 60;      
 timer_next_wave = 180; 
 
-alarm[0] = timer_next_wave; // Alarme para INICIAR a wave
+// Controle de fluxo
+is_spawning = false;   
+spawn_finished = false; // Adicionado para compatibilidade com sua lógica
+total_in_wave = 0;     
+
+// Inicia o timer para a primeira wave
+alarm[0] = timer_next_wave;
