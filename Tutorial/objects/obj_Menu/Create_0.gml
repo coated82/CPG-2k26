@@ -1,6 +1,10 @@
 // ========== CONFIGURAÇÕES DO MENU ==========
 menu = [
+<<<<<<< Updated upstream
     { texto: "Jogar", funcao: function() { room_goto(rm_MainGame_1); } },
+=======
+    { texto: "Jogar", funcao: function() { room_goto(rm_selecao_fases); } },
+>>>>>>> Stashed changes
     { texto: "Opções", funcao: function() { room_goto(rm_opcoes); } },
     { texto: "Comandos", funcao: function() { room_goto(rm_comandos); } },
     { texto: "Sair", funcao: function() { game_end(); } }
