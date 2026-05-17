@@ -6,14 +6,16 @@ level = 0;
 max_level = 5;
 upgrade_cost = 150;
 
-// Variáveis de Economia (Corrigindo os erros de crash)
-cash_per_pulse = 15;   
+// Variáveis de Economia (Ajustadas para 15 inicial)
+cash_per_pulse = 15;   // Geração inicial definida para 15
 fire_rate = 300;       
-selected = false;      // <--- ISSO resolve o erro do seu último crash
+selected = false;      
 range = 100;
 
 // Inicialização
-alarm[1] = fire_rate; 
+image_speed = 0;
+image_index = 0;       // Garante que começa no frame do Level 0
+alarm[1] = fire_rate;  // Inicia o ciclo de geração
 
 // Estética
 image_xscale = 0.15;
