@@ -70,6 +70,7 @@
     {"id":{"name":"obj_selecao_fases","path":"objects/obj_selecao_fases/obj_selecao_fases.yy",},},
     {"id":{"name":"obj_slider_volume","path":"objects/obj_slider_volume/obj_slider_volume.yy",},},
     {"id":{"name":"obj_Spawner_Wave","path":"objects/obj_Spawner_Wave/obj_Spawner_Wave.yy",},},
+    {"id":{"name":"obj_Tooltip","path":"objects/obj_Tooltip/obj_Tooltip.yy",},},
     {"id":{"name":"obj_Tower_Div","path":"objects/obj_Tower_Div/obj_Tower_Div.yy",},},
     {"id":{"name":"obj_Tower_Exp","path":"objects/obj_Tower_Exp/obj_Tower_Exp.yy",},},
     {"id":{"name":"obj_Tower_Mult","path":"objects/obj_Tower_Mult/obj_Tower_Mult.yy",},},

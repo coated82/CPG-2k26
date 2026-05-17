@@ -1,0 +1,1 @@
+global.tooltip_text = description;

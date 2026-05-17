@@ -10,6 +10,7 @@
     {"name":"obj_Imaginary_i","order":1,"path":"objects/obj_Imaginary_i/obj_Imaginary_i.yy",},
     {"name":"obj_selecao_fases","order":4,"path":"objects/obj_selecao_fases/obj_selecao_fases.yy",},
     {"name":"obj_slider_volume","order":2,"path":"objects/obj_slider_volume/obj_slider_volume.yy",},
+    {"name":"obj_Tooltip","order":3,"path":"objects/obj_Tooltip/obj_Tooltip.yy",},
     {"name":"obj_Tower_Sum","order":1,"path":"objects/obj_Tower_Sum/obj_Tower_Sum.yy",},
     {"name":"pth_Loop","order":1,"path":"paths/pth_Loop/pth_Loop.yy",},
     {"name":"rm_comandos","order":1,"path":"rooms/rm_comandos/rm_comandos.yy",},

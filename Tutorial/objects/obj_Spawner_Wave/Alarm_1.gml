@@ -12,7 +12,7 @@ if (enemies_to_spawn > 0) {
     var _hp_final = _hp_base * _multiplicador; 
     
     var _is_negative = false;   
-    var _is_imaginary = false;  
+    var _is_imaginary = false;   
 
     // Seletor de tipo (Mantido para manter a diversidade matemática)
     if (global.wave <= 2) {

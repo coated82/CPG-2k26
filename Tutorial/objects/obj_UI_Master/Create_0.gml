@@ -1,3 +1,4 @@
+global.tooltip_text = "";
 // 1. Define a profundidade base para a UI (o mais para frente possível)
 var _base_depth = -15000;
 
