@@ -29,6 +29,7 @@
     {"name":"expo","order":2,"path":"sprites/expo/expo.yy",},
     {"name":"imaginario","order":2,"path":"sprites/imaginario/imaginario.yy",},
     {"name":"mult","order":1,"path":"sprites/mult/mult.yy",},
+    {"name":"spr_Amasso","order":4,"path":"sprites/spr_Amasso/spr_Amasso.yy",},
     {"name":"spr_Bullet_Exp","order":1,"path":"sprites/spr_Bullet_Exp/spr_Bullet_Exp.yy",},
     {"name":"spr_fase_euler_ofc","order":3,"path":"sprites/spr_fase_euler_ofc/spr_fase_euler_ofc.yy",},
     {"name":"spr_fase_euler","order":1,"path":"sprites/spr_fase_euler/spr_fase_euler.yy",},

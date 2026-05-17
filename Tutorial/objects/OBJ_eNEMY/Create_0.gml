@@ -7,14 +7,17 @@ path_pause    = false;
 depth         = -50;   
 image_xscale  = 0.35;
 image_yscale  = 0.35;
+base_xscale = image_xscale;
+base_yscale = image_yscale;
 image_speed   = 0;     
 hit_points    = 1;      
 is_negative   = false;  
 is_imaginary  = true; 
 inst_minus_signal     = noone;
 inst_imaginary_signal = noone; 
-// VARIÁVEIS DE LENTIDÃO (DIVISORA)
+// VARIÁVEIS DE FLAG
 is_slowed = false;
+dying = false;
 
 // --- 2. FUNÇÃO DE LIMPEZA ---
 cleanup_signals = function() {
@@ -73,11 +76,8 @@ hurt = function(_amount = 1, _source_name = "") {
         hit_points -= _amount;
         change_num();
         
-        if (hit_points <= 0) { 
-            global.cash_amount += 10;
-			global.gain_cash += 10;
-            cleanup_signals();
-            instance_destroy();
+        if (hit_points <= 0) {
+			die()
         }
     }
 }
@@ -89,3 +89,18 @@ speed_current  = speed_original;
 
 path_start(current_path, speed_current, path_action_stop, true);
 change_num();
+
+// --- 7. SEQUENCIA DE MORTE ---
+die = function() {
+    global.cash_amount += 10;
+    global.gain_cash += 10;
+
+    cleanup_signals();
+
+    sprite_index = spr_Amasso;
+
+    image_index = 0;
+    image_speed = 4;
+
+    dying = true;
+}
