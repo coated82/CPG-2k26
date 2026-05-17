@@ -29,4 +29,3 @@ global.powerup_copy_cooldown_total = 30;        // 30 segundos de espera para co
 global.powerup_paste_disponivel = true;         // Ctrl+V disponível
 global.powerup_paste_cooldown = 0;
 global.powerup_paste_cooldown_total = 30;       // 30 segundos de espera para colar
-

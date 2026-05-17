@@ -33,7 +33,6 @@
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Bullets","folderPath":"folders/Sprites/Bullets.yy","name":"Bullets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Config Volume","folderPath":"folders/Sprites/Config Volume.yy","name":"Config Volume","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Fases","folderPath":"folders/Sprites/Fases.yy","name":"Fases","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Lighting","folderPath":"folders/Sprites/Lighting.yy","name":"Lighting","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tileset","folderPath":"folders/Sprites/Tileset.yy","name":"Tileset","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Towers","folderPath":"folders/Sprites/Towers.yy","name":"Towers","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -67,7 +66,6 @@
     {"id":{"name":"obj_Mouse","path":"objects/obj_Mouse/obj_Mouse.yy",},},
     {"id":{"name":"obj_Placeable","path":"objects/obj_Placeable/obj_Placeable.yy",},},
     {"id":{"name":"obj_Room_Init","path":"objects/obj_Room_Init/obj_Room_Init.yy",},},
-    {"id":{"name":"obj_selecao_fase","path":"objects/obj_selecao_fase/obj_selecao_fase.yy",},},
     {"id":{"name":"obj_slider_volume","path":"objects/obj_slider_volume/obj_slider_volume.yy",},},
     {"id":{"name":"obj_Spawner_Wave","path":"objects/obj_Spawner_Wave/obj_Spawner_Wave.yy",},},
     {"id":{"name":"obj_Tower_Div","path":"objects/obj_Tower_Div/obj_Tower_Div.yy",},},
@@ -98,7 +96,6 @@
     {"id":{"name":"rm_MainGame","path":"rooms/rm_MainGame/rm_MainGame.yy",},},
     {"id":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"id":{"name":"rm_opcoes","path":"rooms/rm_opcoes/rm_opcoes.yy",},},
-    {"id":{"name":"rm_selecao_fase","path":"rooms/rm_selecao_fase/rm_selecao_fase.yy",},},
     {"id":{"name":"draw_set","path":"scripts/draw_set/draw_set.yy",},},
     {"id":{"name":"layers","path":"scripts/layers/layers.yy",},},
     {"id":{"name":"pathfinder","path":"scripts/pathfinder/pathfinder.yy",},},
@@ -116,8 +113,6 @@
     {"id":{"name":"spr_Bullet_Sum","path":"sprites/spr_Bullet_Sum/spr_Bullet_Sum.yy",},},
     {"id":{"name":"spr_Bullet","path":"sprites/spr_Bullet/spr_Bullet.yy",},},
     {"id":{"name":"spr_Enemy","path":"sprites/spr_Enemy/spr_Enemy.yy",},},
-    {"id":{"name":"spr_fase_locked_1","path":"sprites/spr_fase_locked_1/spr_fase_locked_1.yy",},},
-    {"id":{"name":"spr_fase_parelelo","path":"sprites/spr_fase_parelelo/spr_fase_parelelo.yy",},},
     {"id":{"name":"spr_fonte_numeros","path":"sprites/spr_fonte_numeros/spr_fonte_numeros.yy",},},
     {"id":{"name":"spr_Icon_Sell","path":"sprites/spr_Icon_Sell/spr_Icon_Sell.yy",},},
     {"id":{"name":"spr_Icon_Upgrade","path":"sprites/spr_Icon_Upgrade/spr_Icon_Upgrade.yy",},},
@@ -141,7 +136,6 @@
     {"id":{"name":"spr_UI_Close","path":"sprites/spr_UI_Close/spr_UI_Close.yy",},},
     {"id":{"name":"spr_UI_Panel","path":"sprites/spr_UI_Panel/spr_UI_Panel.yy",},},
     {"id":{"name":"spr_UI_Store","path":"sprites/spr_UI_Store/spr_UI_Store.yy",},},
-    {"id":{"name":"spt_fase_locked_2","path":"sprites/spt_fase_locked_2/spt_fase_locked_2.yy",},},
     {"id":{"name":"ts_Default","path":"tilesets/ts_Default/ts_Default.yy",},},
   ],
   "resourceType":"GMProject",
@@ -152,11 +146,7 @@
     {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"roomId":{"name":"rm_opcoes","path":"rooms/rm_opcoes/rm_opcoes.yy",},},
     {"roomId":{"name":"rm_comandos","path":"rooms/rm_comandos/rm_comandos.yy",},},
-<<<<<<< Updated upstream
     {"roomId":{"name":"rm_MainGame_1","path":"rooms/rm_MainGame_1/rm_MainGame_1.yy",},},
-=======
-    {"roomId":{"name":"rm_selecao_fase","path":"rooms/rm_selecao_fase/rm_selecao_fase.yy",},},
->>>>>>> Stashed changes
   ],
   "templateType":null,
   "TextureGroups":[
