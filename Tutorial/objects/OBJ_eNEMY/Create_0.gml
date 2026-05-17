@@ -1,5 +1,7 @@
 randomize();
 
+image_blend = make_color_rgb(200,200,200);
+
 // --- 1. CONFIGURAÇÕES ---
 path_pause    = false; 
 depth         = -50;   
