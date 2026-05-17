@@ -147,6 +147,7 @@
     {"id":{"name":"spr_Menu","path":"sprites/spr_Menu/spr_Menu.yy",},},
     {"id":{"name":"spr_minus_tower","path":"sprites/spr_minus_tower/spr_minus_tower.yy",},},
     {"id":{"name":"spr_MinusModifier","path":"sprites/spr_MinusModifier/spr_MinusModifier.yy",},},
+    {"id":{"name":"spr_numeros_red","path":"sprites/spr_numeros_red/spr_numeros_red.yy",},},
     {"id":{"name":"spr_Placeable","path":"sprites/spr_Placeable/spr_Placeable.yy",},},
     {"id":{"name":"spr_plus_tower","path":"sprites/spr_plus_tower/spr_plus_tower.yy",},},
     {"id":{"name":"spr_slider_barra","path":"sprites/spr_slider_barra/spr_slider_barra.yy",},},
