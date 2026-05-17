@@ -1,13 +1,58 @@
 if (global.pausado) exit;
 
 // ============================================================================
+//                          SALVAR RECORDE (quando vem do jogo)
+// ============================================================================
+if (global.wave > 0) {
+    // Pega o recorde atual baseado na fase
+    var _recorde_atual = 0;
+    var _nome = "";
+    
+    switch (global.fase_atual) {
+        case "paralelo":
+            _recorde_atual = global.recorde_paralelo;
+            _nome = "paralelo";
+            break;
+        case "quadratico":
+            _recorde_atual = global.recorde_quadratico;
+            _nome = "quadratico";
+            break;
+        case "euler":
+            _recorde_atual = global.recorde_euler;
+            _nome = "euler";
+            break;
+    }
+    
+    // Se a wave atual for maior, salva
+    if (global.wave > _recorde_atual) {
+        // Atualiza a variável global
+        switch (global.fase_atual) {
+            case "Paralelo":
+                global.recorde_paralelo = global.wave;
+                break;
+            case "Quadratico":
+                global.recorde_quadratico = global.wave;
+                break;
+            case "Euler":
+                global.recorde_euler = global.wave;
+                break;
+        }
+        
+        // Salva no arquivo
+        ini_open("recordes.ini");
+        ini_write_real("Recordes", _nome, global.wave);
+        ini_close();
+        
+        show_debug_message("🏆 NOVO RECORDE! " + _nome + ": Wave " + string(global.wave));
+    }
+}
+
+// ============================================================================
 //                          RESETAR TUDO
 // ============================================================================
-
 global.tipo_pausa = 0;
 global.pausado = false;
 global.wave = 0;
-
 global.hitpoints = 6;
 global.cash_amount = 100;
 

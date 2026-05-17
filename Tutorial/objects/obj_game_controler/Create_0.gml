@@ -24,6 +24,8 @@ global.powerup_s_ativo = false;
 global.powerup_s_timer = 0;
 global.powerup_s_tempo_total = 10;  // 10 segundos de duração
 global.powerup_s_disponivel = true;
+
+
 global.powerup_s_cooldown = 0;
 global.powerup_s_cooldown_total = 15;  // 15 segundos de espera até poder usar de novo
 global.speed_multiplier = 1;
@@ -37,3 +39,67 @@ global.powerup_copy_cooldown_total = 30;        // 30 segundos de espera para co
 global.powerup_paste_disponivel = true;         // Ctrl+V disponível
 global.powerup_paste_cooldown = 0;
 global.powerup_paste_cooldown_total = 30;       // 30 segundos de espera para colar
+
+// ============================================================================
+//                          RECORDES DAS FASES
+// ============================================================================
+
+// Recorde de cada fase (variáveis separadas e simples)
+global.recorde_paralelo = 0;
+global.recorde_quadratico = 0;
+global.recorde_euler = 0;
+
+// Qual fase estamos jogando agora
+global.fase_atual = "paralelo";
+
+// Wave atual da partida
+global.wave = 0;
+
+// ============================================================================
+//                          SALVAR RECORDE
+// ============================================================================
+
+function salvar_recorde() {
+    var _recorde_atual = 0;
+    var _nome = "";
+    
+    // Pega o recorde atual baseado na fase
+    switch (global.fase_atual) {
+        case "paralelo":
+            _recorde_atual = global.recorde_paralelo;
+            _nome = "paralelo";
+            break;
+        case "quadratico":
+            _recorde_atual = global.recorde_quadratico;
+            _nome = "quadratico";
+            break;
+        case "euler":
+            _recorde_atual = global.recorde_euler;
+            _nome = "euler";
+            break;
+    }
+    
+    // Se a wave atual for maior, salva
+    if (global.wave > _recorde_atual) {
+        // Atualiza a variável global
+        switch (global.fase_atual) {
+            case "paralelo":
+                global.recorde_paralelo = global.wave;
+                break;
+            case "quadratico":
+                global.recorde_quadratico = global.wave;
+                break;
+            case "euler":
+                global.recorde_euler = global.wave;
+                break;
+        }
+        
+        // Salva no arquivo
+        ini_open("recordes.ini");
+        ini_write_real("Recordes", _nome, global.wave);
+        ini_close();
+        
+        show_debug_message("🏆 NOVO RECORDE! " + _nome + ": Wave " + string(global.wave));
+    }
+}
+

@@ -5,7 +5,7 @@ global.hitpoints -= 1;
 
 // 2. Verificação de Condição de Parada (Game Over)
 if (global.hitpoints <= 0) {
-    game_restart(); // Reinicia o sistema
+    room_goto(rm_Menu);
 }
 
 // 3. Limpeza de memória (SINAIS ÓRFÃOS)

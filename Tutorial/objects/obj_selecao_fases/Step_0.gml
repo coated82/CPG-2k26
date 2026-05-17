@@ -17,6 +17,7 @@ for (var i = 0; i < array_length(mapas); i++) {
         
         // Clique para selecionar (só se estiver liberado)
         if (mouse_check_button_pressed(mb_left) && mapas[i].liberado) {
+			global.fase_atual = mapas[i].nome;
             room_goto(mapas[i].room);
         }
     }

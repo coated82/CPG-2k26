@@ -75,13 +75,42 @@ for (var i = 0; i < _total_fases; i++) {
     }
     draw_text(_bx + _sprite_w/2, _by + _sprite_h + 20, mapas[i].nome);
     
-    // ===== TEXTO "EM BREVE" =====
+    // ===== MOSTRA RECORDE DA FASE =====
+    if (mapas[i].liberado) {
+        var _recorde = 0;
+        
+        switch (mapas[i].nome) {
+            case "Paralelo":
+                _recorde = global.recorde_paralelo;
+                break;
+            case "Quadratico":
+                _recorde = global.recorde_quadratico;
+                break;
+            case "Euler":
+                _recorde = global.recorde_euler;
+                break;
+        }
+        
+        // Cor do recorde segue a cor da fase (selecionada = amarelo, normal = preto)
+        if (i == indice_selecionado) {
+            draw_set_colour(c_yellow);
+        } else {
+            draw_set_colour(c_black);
+        }
+        
+        draw_set_font(-1);  // Fonte padrão menor
+        draw_text(_bx + _sprite_w/2, _by + _sprite_h + 70, "Recorde: Wave " + string(_recorde));
+        draw_set_font(fnt_Menu);  // Volta para a fonte do menu
+    }
+    
+    // ===== TEXTO "EM BREVE" (para fases bloqueadas) =====
     if (!mapas[i].liberado) {
-        draw_set_font(fnt_Menu);
+        draw_set_font(-1);
         draw_set_colour(c_orange);
         draw_set_alpha(0.8);
-        draw_text(_bx + _sprite_w/2, _by + _sprite_h + 50, "EM BREVE");
+        draw_text(_bx + _sprite_w/2, _by + _sprite_h + 70, "EM BREVE");
         draw_set_alpha(1);
+        draw_set_font(fnt_Menu);
     }
 }
 
@@ -93,7 +122,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_bottom);
 draw_text(_cx, display_get_gui_height() - 80, "Clique no mapa | <-  ->  | ENTER | ESC para voltar");
 
-// Reset
+// ========== RESET ==========
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_font(-1);
