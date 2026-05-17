@@ -7,7 +7,7 @@ if (enemies_to_spawn > 0) {
     // Velocidade muito suave para a média da Wave 20
     _inst.path_speed = 0.8 + (global.wave * 0.02); 
     
-    var _hp_base = 3; 
+    var _hp_base = 2; 
     var _multiplicador = ceil(global.wave / 3); 
     var _hp_final = _hp_base * _multiplicador; 
     

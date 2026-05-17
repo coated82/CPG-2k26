@@ -1,0 +1,1 @@
+alpha -= 0.02;  // Vai sumindo aos poucos

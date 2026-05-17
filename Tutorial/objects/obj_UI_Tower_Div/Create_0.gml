@@ -4,7 +4,7 @@ event_inherited();
 // 2. CONFIGURAÇÃO DA TORRE (Sobrescrevendo os valores do pai)
 #region TOWER INFORMATION
 	name = "Divisora";
-	cost = 80;
+	cost = 110;
 	image = spr_Tower_Slow; // Mantenha o nome exato do seu sprite aqui
     
     // ATENÇÃO: Verifique se o nome do objeto no seu Asset Browser 

@@ -4,8 +4,8 @@ event_inherited();
 // 2. CONFIGURAÇÃO DA TORRE (Sobrescrevendo os valores do pai)
 #region TOWER INFORMATION
 	name = "Multiplicadora";
-	cost = 80;
-	image = spr_Tower_Bomb; // Mantenha o nome exato do seu sprite aqui
+	cost = 150;
+	image = spr_Tower_Mult; // Mantenha o nome exato do seu sprite aqui
     
     // ATENÇÃO: Verifique se o nome do objeto no seu Asset Browser 
     // é obj_Tower_Sub ou obj_Tower_Sub_Real e use o correto abaixo:

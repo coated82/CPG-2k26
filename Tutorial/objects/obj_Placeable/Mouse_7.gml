@@ -7,7 +7,7 @@ if (global.instance_tower_to_build != noone) {
         case obj_Tower_Sum:  _cost = 100; break;
         case obj_Tower_Sub:  _cost = 80; break;
         case obj_Tower_Exp:  _cost = 50; break;
-        case obj_Tower_Div:  _cost = 120; break;
+        case obj_Tower_Div:  _cost = 110; break;
         case obj_Tower_Mult: _cost = 150; break;
         default:             _cost = 0;   break;
     }

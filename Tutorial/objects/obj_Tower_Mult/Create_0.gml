@@ -1,15 +1,20 @@
-event_inherited(); // Puxa variáveis do obj_Tower_Parent
+event_inherited(); 
 
-image_xscale = 0.15;
-image_yscale = 0.15;
-
+// Dados de Identidade
 name = "Multiplicadora";
 level = 1;
-upgrade_price = 150;
+max_level = 5;
+upgrade_cost = 150;
 
-// Configuração de Lucro
-cash_per_pulse = 15; 
-rate_of_fire = 120; // 2 segundos (se o jogo for 60fps)
+// Variáveis de Economia (Corrigindo os erros de crash)
+cash_per_pulse = 15;   
+fire_rate = 300;       
+selected = false;      // <--- ISSO resolve o erro do seu último crash
+range = 100;
 
-// START: Liga o primeiro ciclo de geração
-alarm[1] = rate_of_fire;
+// Inicialização
+alarm[1] = fire_rate; 
+
+// Estética
+image_xscale = 0.15;
+image_yscale = 0.15;

@@ -1,0 +1,1 @@
+instance_destroy(); // Se destrói após subir

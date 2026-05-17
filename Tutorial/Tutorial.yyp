@@ -60,6 +60,7 @@
     {"id":{"name":"obj_Effect_MoneyText","path":"objects/obj_Effect_MoneyText/obj_Effect_MoneyText.yy",},},
     {"id":{"name":"obj_Enemy_Parent","path":"objects/obj_Enemy_Parent/obj_Enemy_Parent.yy",},},
     {"id":{"name":"obj_Enemy","path":"objects/obj_Enemy/obj_Enemy.yy",},},
+    {"id":{"name":"obj_FloatText","path":"objects/obj_FloatText/obj_FloatText.yy",},},
     {"id":{"name":"obj_game_controler","path":"objects/obj_game_controler/obj_game_controler.yy",},},
     {"id":{"name":"obj_Imaginary_i","path":"objects/obj_Imaginary_i/obj_Imaginary_i.yy",},},
     {"id":{"name":"obj_Init","path":"objects/obj_Init/obj_Init.yy",},},

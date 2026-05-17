@@ -1,14 +1,14 @@
-// Inherit the parent event
-event_inherited();
+// 1. Desenha o Sprite da torre
+draw_self();
 
-draw_self(); // Desenha o sprite da torre
+// 2. Desenha o alcance apenas se estiver selecionada (Variável 'selected' agora existe!)
+if (selected) {
+    draw_set_alpha(0.2);
+    draw_circle_color(x, y, range, c_yellow, c_yellow, false);
+    draw_set_alpha(1);
+}
 
-draw_set_color(c_yellow);
+// 3. Texto do valor acima da torre
 draw_set_halign(fa_center);
-
-// Mostra o nível e quanto ela vai gerar no próximo pulo
-draw_text(x, y - 40, "LVL: " + string(level));
-draw_text(x, y - 55, "+$" + string(cash_per_pulse * level));
-
-draw_set_halign(fa_left); // Reseta o alinhamento
-draw_set_color(c_white);
+var _valor_atual = cash_per_pulse * level;
+draw_text(x, y - 55, "+$" + string(_valor_atual));
