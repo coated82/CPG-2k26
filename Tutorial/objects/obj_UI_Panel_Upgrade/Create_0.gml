@@ -38,12 +38,15 @@ show = function(_inst) {
     
     tower_name = _inst.name;
     tower_level = _inst.level;
-    tower_damage = _inst.damage;
-    tower_update_cost = _inst.upgrade_cost;
     
-    // Notifica os botões sobre qual torre estamos olhando
-    instance_btn_purchase.target_tower = _inst;
-    instance_btn_sell.target_tower = _inst;
+    // CORREÇÃO: Verifica se a variável existe antes de ler
+    if (variable_instance_exists(_inst, "damage")) {
+        tower_damage = _inst.damage;
+    } else {
+        tower_damage = 0; // Valor padrão caso não exista
+    }
+    
+    tower_update_cost = _inst.upgrade_cost;
 }
 
 hide = function() {
