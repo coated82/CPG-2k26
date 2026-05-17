@@ -10,6 +10,7 @@ if (global.hitpoints <= 0) {
     room_goto(rm_final_scream);
 }
 
-// 3. Destruição Limpa
+// 3. Destruição Limpas
+//mudando
 // O Boss X não tem sinais para limpar, então apenas nos destruímos!
 instance_destroy();
