@@ -49,7 +49,7 @@ draw_text(_cx, _y, "Recorde: Wave " + string(_recorde));
 _y += 50;
 
 // Dinheiro gasto
-draw_text(_cx, _y, "Dinheiro gasto: $" + string(global.dinheiro_gasto));
+draw_text(_cx, _y, "Dinheiro gasto: $" + string(global.dinheiro_gasto * -1));
 _y += 50;
 
 // Dinheiro ganho
