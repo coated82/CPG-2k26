@@ -33,3 +33,4 @@ var pontuacao = 15392;
 draw_text(50, 50, "PONTOS: " + string(pontuacao));
 
 */
+
