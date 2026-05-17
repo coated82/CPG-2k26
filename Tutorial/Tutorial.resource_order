@@ -6,6 +6,7 @@
     {"name":"Fases","order":3,"path":"folders/Sprites/Fases.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fullscreen","order":8,"path":"objects/fullscreen/fullscreen.yy",},
     {"name":"obj_Bullet_Exp","order":1,"path":"objects/obj_Bullet_Exp/obj_Bullet_Exp.yy",},
     {"name":"obj_comandos","order":3,"path":"objects/obj_comandos/obj_comandos.yy",},
     {"name":"obj_Enemy_heal","order":3,"path":"objects/obj_Enemy_heal/obj_Enemy_heal.yy",},
