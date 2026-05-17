@@ -3,7 +3,7 @@ if (global.pausado) exit;
 // 1. Decrementa o contador de vidas global
 // Sendo um Boss, você pode até fazer ele tirar mais vidas (ex: -= 5), 
 // mas vamos deixar 1 por enquanto para testar.
-global.hitpoints -= 1;
+global.hitpoints -= 10;
 
 // 2. Verificação de Game Over
 if (global.hitpoints <= 0) {

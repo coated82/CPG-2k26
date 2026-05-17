@@ -1,8 +1,6 @@
 randomize();
 
 // --- 1. IDENTIDADE VISUAL ---
-// Voltando ao modo inteiramente vermelho (tinge o sprite cinza/grayscale)
-image_blend = c_red; 
 
 path_pause    = false; 
 depth         = -50;   

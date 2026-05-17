@@ -5,7 +5,7 @@ image_yscale = 0.15;
 
 // Nomes padronizados para o Script de Upgrade e Painel
 name = "Somadora";
-level = 1;
+level = 0;
 max_level = 5; 
 bullet_damage = 2; 
 upgrade_cost = 100; // Mudei de upgrade_price para upgrade_cost (padrão que usamos)

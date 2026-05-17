@@ -2,7 +2,7 @@ event_inherited();
 
 // Dados de Identidade (Para o Painel e Script de Upgrade)
 name = "Divisora";
-level = 1;
+level = 0;
 max_level = 5;
 upgrade_cost = 150;
 
