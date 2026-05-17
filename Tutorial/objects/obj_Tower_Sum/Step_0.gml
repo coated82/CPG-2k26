@@ -15,7 +15,7 @@ if (global.pausado) exit;
 if (target == noone) {
     var _me = id;
     var _max_progress = -1;
-    with (obj_Enemy) { // Certifique-se que obj_Enemy é o certo ou use obj_Enemy_Parent
+    with (obj_Enemy) { 
         if (point_distance(x, y, _me.x, _me.y) <= _me.range && is_negative && !is_imaginary && hit_points > 0) {
             if (path_position > _max_progress) {
                 _max_progress = path_position;
@@ -40,7 +40,10 @@ if (instance_exists(target)) {
             _bullet.direction = _dir;
             _bullet.image_angle = _dir;
             _bullet.speed = 12;
-            _bullet.damage = bullet_damage; // Padronizado para .damage
+            
+            // CORREÇÃO: Passa a variável 'damage' que é atualizada pelo Script de Upgrade
+            _bullet.damage = damage; 
+            
             _bullet.target = target;
         }
     }

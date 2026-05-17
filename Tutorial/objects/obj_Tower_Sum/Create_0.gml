@@ -1,20 +1,23 @@
 event_inherited(); 
 
+// --- APARÊNCIA ---
 image_xscale = 0.15;
 image_yscale = 0.15;
+image_speed = 0;
+image_index = 0; // Começa no frame 0 (Nível 0)
 
-// Nomes padronizados para o Script de Upgrade e Painel
+// --- IDENTIFICAÇÃO E EVOLUÇÃO ---
 name = "Somadora";
 level = 0;
 max_level = 5; 
-bullet_damage = 2; 
-upgrade_cost = 100; // Mudei de upgrade_price para upgrade_cost (padrão que usamos)
+upgrade_cost = 100;
 
-// Dados de funcionamento
-range = 200;        // Mudei de radius para range
-fire_rate = 45;     // Mudei para frames (45 frames = 0.75s em 60fps)
+// --- ATRIBUTOS DE COMBATE ---
+damage = 2;         // Dano que será incrementado pelo Script
+bullet_damage = 2;  // Variável de backup (sincronizada com damage no Step)
+range = 200;        
+fire_rate = 45;     
 can_shoot = true;
 
 target = noone;
-
 description = "Adiciona valor a números negativos.";
