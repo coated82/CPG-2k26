@@ -6,7 +6,7 @@ function pathfinder()
             return choose(pth_Bottom, pth_Top);
 
         case rm_MainGame_1:
-            return path_city;
+            return pth_Loop;
     }
 
     return -1;
