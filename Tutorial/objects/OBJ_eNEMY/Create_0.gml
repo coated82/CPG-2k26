@@ -101,6 +101,15 @@ die = function() {
 
     image_index = 0;
     image_speed = 4;
+	
+	// 1. Inicia o som e guarda o ID dele
+		var _inst_som = audio_play_sound(snd_death, 1, false);
+
+	// 2. Acelera o som (Pitch)
+	// 1.0 é a velocidade normal. 
+	// 1.2 fica 20% mais rápido. 1.5 fica bem rápido.
+	audio_sound_pitch(_inst_som, 1.2); 
+
 
     dying = true;
 }
