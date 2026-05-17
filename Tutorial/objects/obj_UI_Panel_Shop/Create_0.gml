@@ -1,3 +1,7 @@
+// 1. DEFINIÇÃO DE PROFUNDIDADE (Sempre no topo)
+// Forçamos o painel a ficar bem à frente (-15500)
+depth = -15500;
+
 // Coordenadas de Posição (Slide Lateral)
 position_hidden_x = 1504;
 position_hidden_y = 320;
@@ -11,6 +15,8 @@ x = position_hidden_x;
 y = position_hidden_y;
 visible = false;
 
+// 2. CÁLCULO DA PROFUNDIDADE DOS BOTÕES
+// Usamos "depth - 1" para que os botões fiquem SEMPRE 1 nível à frente do painel
 var _layer_depth = depth - 1;
 
 // Criar Elementos da UI (Instanciação)

@@ -8,3 +8,4 @@ offset_x = 0;
 offset_y = 0;
 
 parent = noone;
+depth = -16000;

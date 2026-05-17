@@ -11,7 +11,6 @@ is_negative   = false;
 is_imaginary  = true; 
 inst_minus_signal     = noone;
 inst_imaginary_signal = noone; 
-
 // VARIÁVEIS DE LENTIDÃO (DIVISORA)
 is_slowed = false;
 

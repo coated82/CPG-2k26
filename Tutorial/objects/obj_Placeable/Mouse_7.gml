@@ -12,13 +12,13 @@ if (global.instance_tower_to_build != noone) {
         default:             _cost = 0;   break;
     }
 
-    // 2. SÓ EXECUTA SE O JOGADOR TIVER DINHEIRO
-    if (global.cash_amount >= _cost) {
+    // 2. SÓ EXECUTA SE O JOGADOR TIVER DINHEIRO E O SLOT NÃO ESTIVER OCUPADO
+    // Adicionei is_occupied aqui por segurança, embora o sistema já esconda o slot
+    if (global.cash_amount >= _cost && !is_occupied) {
         
-        // DEBITA O DINHEIRO AQUI (Pagamento na entrega!)
         global.cash_amount -= _cost;
 
-        // 3. CALCULAR O CENTRO (Seu código de offset)
+        // 3. CALCULAR O CENTRO
         var _offset = 32; 
 
         // 4. CRIAR A TORRE NO CENTRO
@@ -29,10 +29,20 @@ if (global.instance_tower_to_build != noone) {
             global.instance_tower_to_build
         );
 
-        // 5. LIMPAR ESTADOS E DESTRUIR SLOT
+        // 5. TRATAMENTO ESPECIAL PARA A BOMBA EXPONENCIAL
+        if (global.instance_tower_to_build == obj_Tower_Exp) {
+            // Se for a bomba, resetamos o slot para que ele possa ser usado de novo
+            is_occupied = false;
+            can_be_seen = false;
+            image_index = 0;
+        } else {
+            // Se for uma torre fixa, o slot é destruído para sempre
+            instance_destroy();
+        }
+
+        // 6. LIMPAR ESTADOS GLOBAIS
         global.instance_tower_to_build = noone;
         obj_Mouse.selected_sprite = noone;
-        instance_destroy();
 
         with(obj_Placeable){
             can_be_seen = false;
@@ -41,7 +51,6 @@ if (global.instance_tower_to_build != noone) {
         show_debug_message("Torre construída! Custo: " + string(_cost));
         
     } else {
-        // Feedback opcional se o saldo for insuficiente
-        show_debug_message("Saldo insuficiente para construir esta torre!");
+        show_debug_message("Falha na construção: Saldo insuficiente ou slot ocupado!");
     }
 }
